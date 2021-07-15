@@ -1,3 +1,6 @@
+allow hal_power_default vendor_sysfs_kgsl:dir r_dir_perms;
+allow hal_power_default vendor_sysfs_kgsl:file rw_file_perms;
+
 # Allow hal_power_default to write to dt2w nodes
 allow hal_power_default proc_tp_gesture:dir search;
 allow hal_power_default proc_tp_gesture:file rw_file_perms;

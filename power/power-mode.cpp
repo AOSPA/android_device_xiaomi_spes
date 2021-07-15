@@ -19,6 +19,8 @@
 #include <android-base/logging.h>
 #include <linux/input.h>
 
+#define GPU_MIN_PWRLEVEL_NODE "/sys/class/kgsl/kgsl-3d0/min_pwrlevel"
+
 namespace {
 int open_ts_input() {
     int fd = -1;
@@ -63,9 +65,12 @@ static constexpr int kInputEventWakeupModeOff = 4;
 static constexpr int kInputEventWakeupModeOn = 5;
 
 using ::aidl::android::hardware::power::Mode;
+using ::android::base::WriteStringToFile;
+using ::android::base::WriteStringToFile;
 
 bool isDeviceSpecificModeSupported(Mode type, bool* _aidl_return) {
     switch (type) {
+        case Mode::EXPENSIVE_RENDERING:
         case Mode::DOUBLE_TAP_TO_WAKE:
             *_aidl_return = true;
             return true;
@@ -76,6 +81,9 @@ bool isDeviceSpecificModeSupported(Mode type, bool* _aidl_return) {
 
 bool setDeviceSpecificMode(Mode type, bool enabled) {
     switch (type) {
+        case Mode::EXPENSIVE_RENDERING:
+            WriteStringToFile(enabled ? "0" : "6", GPU_MIN_PWRLEVEL_NODE, true);
+            return true;
         case Mode::DOUBLE_TAP_TO_WAKE: {
             int fd = open_ts_input();
             if (fd == -1) {

@@ -19,6 +19,7 @@ on early-init
 
 on boot
     # GPU boost
+    chown system system /sys/class/kgsl/kgsl-3d0/min_pwrlevel
     chmod 0660 /sys/class/kgsl/kgsl-3d0/min_pwrlevel
 
 on property:sys.boot_completed=1
