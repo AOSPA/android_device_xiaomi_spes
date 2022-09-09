@@ -421,7 +421,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         </module>
 
         <!-- A2DP Audio HAL -->
-        <module name="a2dp" halVersion="2.0">
+        <!-- <module name="a2dp" halVersion="2.0">
             <mixPorts>
                 <mixPort name="a2dp input" role="sink">
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
@@ -440,7 +440,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                 <route type="mix" sink="a2dp input"
                        sources="BT A2DP In"/>
             </routes>
-        </module>
+        </module> -->
 
         <!-- Usb Audio HAL -->
         <module name="usb" halVersion="2.0">
