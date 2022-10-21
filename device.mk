@@ -221,9 +221,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.set_touch_timer_ms=4000 \
     ro.surface_flinger.use_content_detection_for_refresh_rate=true
 
-PRODUCT_PRODUCT_PROPERTIES += \
-    persist.sys.sf.color_mode=9
-
 PRODUCT_VENDOR_PROPERTIES += \
     debug.sf.disable_backpressure=1 \
     persist.sys.sf.native_mode=2 \
