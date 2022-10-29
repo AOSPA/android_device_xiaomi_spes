@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from miui_SPESGlobal_V13.0.4.0.SGCMIXM_bc890fc589_12.0
+# All unpinned blobs below are extracted from miui_SPESGlobal_V13.0.5.0.SGCMIXM
 # LA.UM.9.12.r1-13300-SMxx50.QSSI12.0 blobs from kona
 # LA.UM.9.12.r1-14400-SMxx50.QSSI12.0 blobs from kona
 
@@ -676,11 +676,9 @@ vendor/lib64/libdisplayfeature.so
 vendor/lib64/libtinyxml.so
 vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
 
-# Display - stock
-vendor/lib64/libhistogram.so
-
 # Display
-vendor/bin/hw/vendor.qti.hardware.display.composer-service|c6b2c3424c803c9bd9fe16dd205c394e956d1439
+vendor/bin/hw/vendor.qti.hardware.display.composer-service
+vendor/lib64/libhistogram.so
 vendor/lib64/libdisplayconfig.qti.so
 vendor/lib64/libdisp-aba.so
 vendor/lib64/libdisplaydebug.so
@@ -1364,10 +1362,6 @@ vendor/bin/ssr_setup
 vendor/bin/subsystem_ramdump
 vendor/lib/libsubsystem_control.so
 vendor/lib64/libsubsystem_control.so
-
-# TFTP
-vendor/bin/tftp_server
-vendor/etc/init/vendor.qti.tftp.rc
 
 # Thermal configs
 vendor/bin/mi_thermald
