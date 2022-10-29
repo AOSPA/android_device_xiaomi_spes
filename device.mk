@@ -228,7 +228,8 @@ PRODUCT_VENDOR_PROPERTIES += \
     vendor.display.idle_time=0 \
     vendor.display.qdcm.mode_combine=2 \
     vendor.display.svi.config=1 \
-    vendor.display.svi.config_path=/vendor/etc/SVIConfig.xml
+    vendor.display.svi.config_path=/vendor/etc/SVIConfig.xml \
+    vendor.display.use_layer_ext=0
 
 # DPM
 PRODUCT_VENDOR_PROPERTIES += \
