@@ -210,7 +210,7 @@ PRODUCT_PACKAGES += \
     disable_configstore
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    debug.sf.frame_rate_multiple_threshold=60 \
+    debug.sf.frame_rate_multiple_threshold=90 \
     ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
     ro.surface_flinger.max_virtual_display_dimension=4096 \
     ro.surface_flinger.set_touch_timer_ms=200 \
