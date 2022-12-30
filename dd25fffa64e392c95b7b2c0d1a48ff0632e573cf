@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "767c84ef_f03cf20c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2022-12-30T06:34:57Z",
+      "side": 1,
+      "message": "I feel like there\u0027s a reason when QC doesn\u0027t enable these features for a target.",
+      "revId": "dd25fffa64e392c95b7b2c0d1a48ff0632e573cf",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
