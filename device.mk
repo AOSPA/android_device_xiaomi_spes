@@ -533,11 +533,6 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/xiaomi
     
-# SSR
-PRODUCT_SYSTEM_PROPERTIES += \
-    persist.vendor.ssr.restart_level=ALL_ENABLE \
-    persist.vendor.ssr.enable_ramdumps=1
-
 # Storage.xml moment
 PRODUCT_SYSTEM_PROPERTIES += \
     persist.sys.binary_xml=false
