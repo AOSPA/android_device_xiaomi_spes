@@ -84,6 +84,8 @@ on boot
     #add flashlight
     chmod 0660 /sys/class/leds/led:torch/brightness
     chown system system /sys/class/leds/led:torch/brightness
+    chmod 0660 /sys/class/leds/red/trigger
+    chown system system /sys/class/leds/red/trigger
 
     #add ant_check
     chmod 0777 /sys/class/ant_class/ant_state
