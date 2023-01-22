@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "862601c4_d64de471",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2023-01-22T20:20:44Z",
+      "side": 1,
+      "message": "Not sure about this.  The problem is: if carriers do not support calling over 3G, this breaks calling and possibly signal entirely.\n\nI know from when I worked on the Razer Phone 2, we did not support CDMA on Verizon, we only supported LTE, so if you disabled VoLTE, there would be no signal.",
+      "revId": "4c2f2db3b2eca685e0549461f80250454f4dabe3",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
