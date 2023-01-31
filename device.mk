@@ -494,10 +494,6 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.se.type=HCE,UICC \
     sys.vendor.shutdown.waittime=500
 
-# Recovery
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.flash.recovery=0
-
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-ScopedWakelock.vendor \
