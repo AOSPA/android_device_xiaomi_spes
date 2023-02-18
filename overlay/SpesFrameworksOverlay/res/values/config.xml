@@ -668,4 +668,7 @@
          activated. -->
     <integer name="config_nightDisplayColorTemperatureDefault">3850</integer> 
 
+    <!-- Ripple animation played at the time of screen unlock-->
+    <bool name="config_enableUnlockRippleAnimation">false</bool>
+    
 </resources>
