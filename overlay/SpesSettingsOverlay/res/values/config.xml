@@ -38,4 +38,7 @@
     -->
     <integer name="config_vibration_supported_intensity_levels">3</integer>
 
+    <!-- Smart Charging -->
+    <bool name="config_supportSmartCharging">true</bool>
+
 </resources>
