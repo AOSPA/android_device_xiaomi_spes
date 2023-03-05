@@ -276,9 +276,6 @@ PRODUCT_VENDOR_PROPERTIES += \
 # FM
 BOARD_HAVE_QCOM_FM := true
 
-PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    ro.sf.use_latest_hwc_vsync_period=0
-
 # FRP
 PRODUCT_VENDOR_PROPERTIES += \
     ro.frp.pst=/dev/block/bootdevice/by-name/frp
