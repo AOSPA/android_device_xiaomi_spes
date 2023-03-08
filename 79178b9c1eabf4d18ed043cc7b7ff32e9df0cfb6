@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e5973468_378cde73",
+        "filename": "overlay/SpesWifiOverlay/res/values/config.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1000760
+      },
+      "writtenOn": "2023-03-08T04:01:08Z",
+      "side": 1,
+      "message": "remove the tab",
+      "revId": "79178b9c1eabf4d18ed043cc7b7ff32e9df0cfb6",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
