@@ -29,14 +29,15 @@ import java.util.Locale;
 
 public class RefreshTileService extends TileService {
     private static final String KEY_MIN_REFRESH_RATE = "min_refresh_rate";
-    private static final String KEY_PEAK_REFRESH_RATE = "peak_refresh_rate";
 
     private Context context;
     private Tile tile;
 
+    private final List<String> entries = new ArrayList<>();
+    private final List<Float> values = new ArrayList<>();
     private final List<Integer> availableRates = new ArrayList<>();
+    private int active;
     private int activeRateMin;
-    private int activeRateMax;
 
     @Override
     public void onCreate() {
@@ -57,36 +58,17 @@ public class RefreshTileService extends TileService {
     private int getSettingOf(String key) {
         float rate = Settings.System.getFloat(context.getContentResolver(), key, 90);
         int active = availableRates.indexOf((int) Math.round(rate));
-        return Math.max(active, 0);
+        return Math.min(active, 0);
     }
 
     private void syncFromSettings() {
         activeRateMin = getSettingOf(KEY_MIN_REFRESH_RATE);
-        activeRateMax = getSettingOf(KEY_PEAK_REFRESH_RATE);
-    }
-
-    private void cycleRefreshRate() {
-        if (activeRateMax == 0) {
-    	    if(activeRateMin == 0) {
-                activeRateMin = availableRates.size();
-    	    }
-	        activeRateMax = activeRateMin;
-	        float rate = availableRates.get(activeRateMin - 1);
-      	    Settings.System.putFloat(context.getContentResolver(), KEY_MIN_REFRESH_RATE, rate);
-        }
-        float rate = availableRates.get(activeRateMax - 1);
-        Settings.System.putFloat(context.getContentResolver(), KEY_PEAK_REFRESH_RATE, rate);
     }
 
     private void updateTileView() {
-        String displayText;
         int min = availableRates.get(activeRateMin);
-        int max = availableRates.get(activeRateMax);
-
-        displayText = String.format(Locale.US, min == max ? "%d Hz" : "%d - %d Hz", min, max);
-        tile.setContentDescription(displayText);
-        tile.setSubtitle(displayText);
-        tile.setState(min == max ? Tile.STATE_ACTIVE : Tile.STATE_INACTIVE);
+        tile.setContentDescription(entries.get(active));
+        tile.setSubtitle(entries.get(active));
         tile.updateTile();
     }
 
@@ -101,7 +83,6 @@ public class RefreshTileService extends TileService {
     @Override
     public void onClick() {
         super.onClick();
-        cycleRefreshRate();
         syncFromSettings();
         updateTileView();
     }
