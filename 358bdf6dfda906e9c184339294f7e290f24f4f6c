@@ -16,6 +16,24 @@
       "message": "https://github.com/AOSPA/android_device_xiaomi_spes/blob/0b8c923f8c3e0402cb0ab8207a331bf6923c71b4/device.mk#L64-L65 remove these to disable content based refresh rate switching",
       "revId": "358bdf6dfda906e9c184339294f7e290f24f4f6c",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6ff8f84d_cfd04ad3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000737
+      },
+      "writtenOn": "2023-06-25T11:58:50Z",
+      "side": 1,
+      "message": "bht with that you won\u0027t be able to choose between 60 and 90 hz, right?",
+      "parentUuid": "20a8b193_39cd7843",
+      "revId": "358bdf6dfda906e9c184339294f7e290f24f4f6c",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
