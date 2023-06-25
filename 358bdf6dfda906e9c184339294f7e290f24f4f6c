@@ -34,6 +34,24 @@
       "parentUuid": "20a8b193_39cd7843",
       "revId": "358bdf6dfda906e9c184339294f7e290f24f4f6c",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f51a6f7e_281b8834",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000579
+      },
+      "writtenOn": "2023-06-25T12:16:53Z",
+      "side": 1,
+      "message": "without the properties for dynamic it would just switch like normal",
+      "parentUuid": "6ff8f84d_cfd04ad3",
+      "revId": "358bdf6dfda906e9c184339294f7e290f24f4f6c",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
