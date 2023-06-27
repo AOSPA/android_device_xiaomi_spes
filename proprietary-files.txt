@@ -96,7 +96,6 @@ vendor/lib/hw/audio.primary.bengal.so|a4b8945137e0eb87e8260c780c1316502f1cc950
 vendor/lib/libaudio_log_utils.so|4bb503a7c4a866ae183bf91073dccc8f35ea9133
 
 # Audio Libraries - from SPES MIUI
-vendor/lib/liba2dpoffload.so|11047bfd368486a99129552e7944a7fb0df2faa2
 vendor/lib/libacdb-fts.so|ab2ac3729f9310be71c926eb647f1042f7b76442
 vendor/lib/libacdbloader.so|69b123d87c03b23531561051240e3e7ebc6109d7
 vendor/lib/libacdbrtac.so|d9a31b8e3035eb3ee29d25b1557cca12c9364f3e
@@ -106,18 +105,9 @@ vendor/lib/libaudcal.so|e233772c6285584968cc7635c7fb59e4e689e7e1
 vendor/lib/libaudioalsa.so|b1521744832c14b67095209955e5d8a440c491a7
 vendor/lib/libaudioconfigstore.so|c41f6f6aeb488155f7018f44e452b76fc014b72d
 vendor/lib/libaudioparsers.so|522d0f379103e431271d3c409f52814289c49a90
-vendor/lib/libbatterylistener.so|4c36265e5b26350856e4834de85183b8cc0ede79
-vendor/lib/libcirrusspkrprot.so|61f343b933bca1ad3ac0ed1f6665dc40330aab08
-vendor/lib/libcomprcapture.so|88fdc2d789d5a6ebf2c92dc9655c0363c7d5f35c
 vendor/lib/libdrc.so|b066f176f119847059c5aa148f73e1b042fbeab3
-vendor/lib/libexthwplugin.so|a115d6707ae1edb9246a4d82dea06acd6101e468
-vendor/lib/libhdmiedid.so|adad95be95301e8ffbf0a630b726e7b62c178c57
 vendor/lib/libhdmipassthru.so|b67150cf9a5e30f61cbd21fdfe0f2633a453b383
-vendor/lib/libhfp.so|06ec8733eb192a498ad88ee923e24cc4c41aa3f3
 vendor/lib/libqtigef.so|cc747f5312e59ed6e436244f16af82987dca4dbd
-vendor/lib/libsndmonitor.so|1682e82f0ceff2eb439f89caaf026aa505b18c82
-vendor/lib/libspkrprot.so|b7bbc0adc502d14febfc6ca284679c081e840916
-vendor/lib/libssrec.so|44e5d6fb497c564b8a8b46c909fa151ee722a24e
 vendor/lib/libsurround_3mic_proc.so|e8e086123e0c1dc17f008f97edb3611cd4c702e1
 
 # Batterysecret - from SPES MIUI
