@@ -52,6 +52,24 @@
       "parentUuid": "653bf4a1_e69c0e3b",
       "revId": "afd7e2317b6fc22e1b45016e3fa295a54e10c7a4",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4f576603_c93cf60d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000730
+      },
+      "writtenOn": "2023-07-10T18:03:48Z",
+      "side": 1,
+      "message": "https://dumps.tadiphone.dev/dumps/redmi/spes/-/blob/missi_phoneext4_global-user-13-TKQ1.221114.001-V14.0.2.0.TGCMIXM-release-keys/vendor/build.prop#L198",
+      "parentUuid": "4076ec9d_c8074d81",
+      "revId": "afd7e2317b6fc22e1b45016e3fa295a54e10c7a4",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
