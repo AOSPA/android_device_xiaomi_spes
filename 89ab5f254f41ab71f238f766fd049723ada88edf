@@ -16,6 +16,24 @@
       "message": "why not auto hbm",
       "revId": "89ab5f254f41ab71f238f766fd049723ada88edf",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "33a2edab_2ff43b20",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000737
+      },
+      "writtenOn": "2023-09-08T12:18:30Z",
+      "side": 1,
+      "message": "I can do that, but I don\u0027t think it\u0027s very good because I need to use auto brightness. And in this implementation I can use qs tile for that",
+      "parentUuid": "8c851c41_cc69d8f7",
+      "revId": "89ab5f254f41ab71f238f766fd049723ada88edf",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
