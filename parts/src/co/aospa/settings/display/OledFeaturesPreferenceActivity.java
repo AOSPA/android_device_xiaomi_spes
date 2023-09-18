@@ -4,14 +4,13 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
-import com.android.settingslib.widget.R;
 
 public class OledFeaturesPreferenceActivity extends CollapsingToolbarBaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getFragmentManager().beginTransaction()
-                .replace(R.id.content_frame, new OledFeaturesPreferenceFragment())
+        getFragmentManager().beginTransaction().replace(
+                com.android.settingslib.collapsingtoolbar.R.id.content_frame, new OledFeaturesPreferenceFragment())
                 .commit();
     }
 
