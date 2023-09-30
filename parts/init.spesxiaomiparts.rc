@@ -16,6 +16,12 @@ on boot
     chown system system /sys/devices/platform/soc/soc:qcom,dsi-display-primary/hbm
     chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/hbm
 
+    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display-primary/msm_fb_ea_enable
+    chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/msm_fb_ea_enable
+
+on property:persist.oled.dc_dimming_mode=*
+    write /sys/devices/platform/soc/soc:qcom,dsi-display-primary/msm_fb_ea_enable ${persist.oled.dc_dimming_mode}
+
 on property:persist.oled.hbm_mode=*
     write /sys/devices/platform/soc/soc:qcom,dsi-display-primary/hbm ${persist.oled.hbm_mode}
 

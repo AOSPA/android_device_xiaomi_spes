@@ -49,6 +49,17 @@
             </intent-filter>
            </service>
 
+        <service
+            android:name=".display.DcDimmingTileService"
+            android:exported="true"
+            android:icon="@drawable/ic_dc_dimming"
+            android:label="@string/dc_dimming_tile_title"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+           </service>
+
     <activity
             android:name=".refreshrate.RefreshActivity"
             android:label="@string/refresh_title"
