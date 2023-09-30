@@ -29,12 +29,12 @@ import android.service.quicksettings.TileService;
 import co.aospa.settings.R;
 import co.aospa.settings.utils.FileUtils;
 
-public class HbmTileService extends TileService {
+public class DCdimmingTileService extends TileService {
 
     private Context context;
     private Tile tile;
 
-    private int currentHbmMode;
+    private int currentDCdimmingMode;
 
     @Override
     public void onCreate() {
@@ -42,17 +42,17 @@ public class HbmTileService extends TileService {
         context = getApplicationContext();
     }
 
-    private void updateCurrentHbmMode() {
-        currentHbmMode = SystemProperties.getInt(DC_DIMMING_PROP, DC_DIMMING_MODE_OFF);
+    private void updatecurrentDCdimmingMode() {
+        currentDCdimmingMode = SystemProperties.getInt(DC_DIMMING_PROP, DC_DIMMING_MODE_OFF);
     }
 
-    private void updateHbmTile() {
-        String enabled = context.getResources().getString(R.string.oled_hbm_title_enabled);
-        String disabled = context.getResources().getString(R.string.oled_hbm_title_disabled);
+    private void updateDCdimmingTile() {
+        String enabled = context.getResources().getString(R.string.oled_dc_dimmin_title_enabled);
+        String disabled = context.getResources().getString(R.string.oled_dc_dimmin_title_disabled);
 
-        tile.setState(currentHbmMode != 0 ? Tile.STATE_ACTIVE : Tile.STATE_INACTIVE);
-        tile.setContentDescription(currentHbmMode != 0 ? enabled : disabled);
-        tile.setSubtitle(currentHbmMode != 0 ?  enabled : disabled);
+        tile.setState(currentDCdimmingMode != 0 ? Tile.STATE_ACTIVE : Tile.STATE_INACTIVE);
+        tile.setContentDescription(currentDCdimmingMode != 0 ? enabled : disabled);
+        tile.setSubtitle(currentDCdimmingMode != 0 ?  enabled : disabled);
         tile.updateTile();
     }
 
@@ -60,22 +60,22 @@ public class HbmTileService extends TileService {
     public void onStartListening() {
         super.onStartListening();
         tile = getQsTile();
-        if (!FileUtils.fileExists(HBM_NODE)) {
+        if (!FileUtils.fileExists(DC_DIMMING_NODE)) {
             tile.setState(Tile.STATE_UNAVAILABLE);
             tile.setSubtitle(getResources().getString(R.string.kernel_not_supported));
             tile.updateTile();
             return;
         }
-        updateCurrentHbmMode();
-        updateHbmTile();
+        updatecurrentDCdimmingMode();
+        updateDCdimmingTile();
     }
 
     @Override
     public void onClick() {
         super.onClick();
-        updateCurrentHbmMode();
-        currentHbmMode = currentHbmMode != HBM_MODE_ON ? HBM_MODE_ON : DC_DIMMING_MODE_OFF;
-        SystemProperties.set(DC_DIMMING_PROP, Integer.toString(currentHbmMode));
-        updateHbmTile();
+        updatecurrentDCdimmingMode();
+        currentDCdimmingMode = currentDCdimmingMode != DC_DIMMING_MODE_ON ? DC_DIMMING_MODE_ON : DC_DIMMING_MODE_OFF;
+        SystemProperties.set(DC_DIMMING_PROP, Integer.toString(currentDCdimmingMode));
+        updateDCdimmingTile();
     }
 }
