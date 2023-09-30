@@ -19,6 +19,10 @@
     android:title="@string/oled_features_title" >
 
     <SwitchPreference
+        android:key="dc_dimming_pref"
+        android:title="@string/oled_dc_dimming_title" />
+
+    <SwitchPreference
         android:key="hbm_pref"
         android:title="@string/oled_hbm_title" />
 
