@@ -30,6 +30,7 @@ import co.aospa.settings.refreshrate.RefreshActivity;
 
 public class TileEntryActivity extends Activity {
     private static final String TAG = "TileEntryActivity";
+    private static final String DC_DIMMING = "co.aospa.settings.display.DcDimmingTileService";
     private static final String HBM_TILE = "co.aospa.settings.display.HbmTileService";
     private static final String REFRESH_TILE = "co.aospa.settings.refreshrate.RefreshTileService";
 
@@ -38,6 +39,9 @@ public class TileEntryActivity extends Activity {
         super.onCreate(savedInstanceState);
         ComponentName sourceClass = getIntent().getParcelableExtra(Intent.EXTRA_COMPONENT_NAME);
         switch (sourceClass.getClassName()) {
+            case DC_DIMMING:
+                openActivitySafely(new Intent(this, OledFeaturesPreferenceActivity.class));
+                break;
             case HBM_TILE:
                 openActivitySafely(new Intent(this, OledFeaturesPreferenceActivity.class));
                 break;

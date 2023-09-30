@@ -31,14 +31,20 @@ import co.aospa.settings.utils.FileUtils;
 public class OledFeaturesPreferenceFragment extends PreferenceFragment
        implements Preference.OnPreferenceChangeListener {
 
+    public static final String DC_DIMMING_NODE = "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/msm_fb_ea_enable";
+    public static final String DC_DIMMING_PROP = "persist.oled.dc_dimming_mode";
     public static final String HBM_NODE = "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/hbm";
     public static final String HBM_PROP = "persist.oled.hbm_mode";
 
+    public static final int DC_DIMMING_MODE_OFF = 0;
+    public static final int DC_DIMMING_MODE_ON = 1;
     public static final int HBM_MODE_OFF = 0;
     public static final int HBM_MODE_ON = 1;
 
+    private static final String KEY_DC_DIMMING = "dc_dimming_pref";
     private static final String KEY_HBM = "hbm_pref";
 
+    private SwitchPreference mDCdimmingPref;
     private SwitchPreference mHbmPref;
 
     @Override
@@ -50,8 +56,10 @@ public class OledFeaturesPreferenceFragment extends PreferenceFragment
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         addPreferencesFromResource(R.xml.oled_features_settings);
+        mDCdimmingPref = (SwitchPreference) findPreference(KEY_DC_DIMMING);
         mHbmPref = (SwitchPreference) findPreference(KEY_HBM);
         restorePreferenceState();
+        mDCdimmingPref.setOnPreferenceChangeListener(this);
         mHbmPref.setOnPreferenceChangeListener(this);
         validateKernelSupport();
     }
@@ -67,22 +75,32 @@ public class OledFeaturesPreferenceFragment extends PreferenceFragment
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         final String key = preference.getKey();
 
-        if (key.equals(KEY_HBM)) {
+        if (key.equals(KEY_DC_DIMMING)) {
+            boolean isDCdimmingEnabled = (Boolean) newValue;
+            mDCdimmingPref.setChecked(isDCdimmingEnabled);
+            SystemProperties.set(DC_DIMMING_PROP,
+                String.valueOf(isDCdimmingEnabled ? DC_DIMMING_MODE_ON : DC_DIMMING_MODE_OFF));
+        } else if (key.equals(KEY_HBM)) {
             boolean isHbmEnabled = (Boolean) newValue;
             mHbmPref.setChecked(isHbmEnabled);
             SystemProperties.set(HBM_PROP,
                 String.valueOf(isHbmEnabled ? HBM_MODE_ON : HBM_MODE_OFF));
         }
-
         return true;
     }
 
     private void restorePreferenceState() {
+        boolean isDCdimmingEnabled = SystemProperties.getInt(DC_DIMMING_PROP, DC_DIMMING_MODE_OFF) > DC_DIMMING_MODE_OFF;
         boolean isHbmEnabled = SystemProperties.getInt(HBM_PROP, HBM_MODE_OFF) > HBM_MODE_OFF;
+        mDCdimmingPref.setChecked(isDCdimmingEnabled);
         mHbmPref.setChecked(isHbmEnabled);
     }
 
     private void validateKernelSupport() {
+        if (!FileUtils.fileExists(DC_DIMMING_NODE)) {
+            mDCdimmingPref.setSummary(getResources().getString(R.string.kernel_not_supported));
+            mDCdimmingPref.setEnabled(false);
+        }
         if (!FileUtils.fileExists(HBM_NODE)) {
             mHbmPref.setSummary(getResources().getString(R.string.kernel_not_supported));
             mHbmPref.setEnabled(false);
