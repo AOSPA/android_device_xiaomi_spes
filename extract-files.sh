@@ -19,6 +19,9 @@ function blob_fixup() {
             "${PATCHELF_0_8}" --remove-needed "libhidlbase.so" "${2}"
             sed -i "s/libhidltransport.so/libhidlbase-v32.so\x00/" "${2}"
             ;;
+        vendor/lib64/libanc_dc_base.so|vendor/lib64/libwa_depth.so|vendor/lib64/libwa_dof.so|vendor/lib64/libwa_refocus.so|vendor/lib64/libwa_rtdof.so|spes/proprietary/vendor/lib64/libwa_widelens_undistort.so)
+            "${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${2}"
+            ;;
     esac
 }
 
