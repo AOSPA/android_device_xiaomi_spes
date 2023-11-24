@@ -75,6 +75,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.hardware.fp.sideCap=true
 
+# Health
+TARGET_USE_HIDL_QTI_HEALTH := true
+
 # Media
 PRODUCT_ODM_PROPERTIES += \
     media.settings.xml=/vendor/etc/media_profiles_khaje.xml
