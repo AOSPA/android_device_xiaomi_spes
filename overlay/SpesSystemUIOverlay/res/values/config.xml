@@ -21,7 +21,7 @@
      for different hardware and product builds. -->
 <resources>
     <!-- Preferred refresh rate at keyguard, if supported by the display -->
-    <integer name="config_keyguardRefreshRate">60</integer>
+    <integer name="config_keyguardRefreshRate">90</integer>
 
     <!-- Default rounded corner curve (a Bezier). Must match (the curved path in) rounded.xml.
          Note that while rounded.xml includes the entire path (including the horizontal and vertical
