@@ -381,4 +381,10 @@
     <!-- Whether device has a big physical display cutout -->
     <bool name="config_physicalDisplayCutout">true</bool>
 
+    <!-- Type of the double tap sensor. Empty if double tap is not supported. -->
+    <string name="config_dozeDoubleTapSensorType" translatable="false">co.aospa.sensor.double_tap</string>
+
+    <!-- Type of the tap sensor. Empty if tap is not supported. -->
+    <string name="config_dozeTapSensorType" translatable="false">co.aospa.sensor.single_tap</string>
+
 </resources>

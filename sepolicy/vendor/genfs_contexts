@@ -1,0 +1,5 @@
+# Double Tap Sensor
+genfscon sysfs /devices/platform/soc/4a88000.i2c/i2c-1/1-0038/double_tap_pressed u:object_r:sysfs_touchpanel:s0
+
+# Single Tap Sensor
+genfscon sysfs /devices/platform/soc/4a88000.i2c/i2c-1/1-0038/single_tap_pressed u:object_r:sysfs_touchpanel:s0

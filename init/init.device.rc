@@ -2,8 +2,17 @@ on post-fs-data
     mkdir /data/vendor/nfc 0770 nfc nfc
 
 on boot
+    # DC Dimming
     chown system system /sys/devices/platform/soc/soc:qcom,dsi-display-primary/msm_fb_ea_enable
     chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/msm_fb_ea_enable
+
+    # Double Tap Sensor
+    chown system system /sys/devices/platform/soc/4a88000.i2c/i2c-1/1-0038/double_tap_pressed
+    chmod 0660 /sys/devices/platform/soc/4a88000.i2c/i2c-1/1-0038/double_tap_pressed
+
+     # Single Tap Sensor
+    chown system system /sys/devices/platform/soc/4a88000.i2c/i2c-1/1-0038/single_tap_pressed
+    chmod 0660 /sys/devices/platform/soc/4a88000.i2c/i2c-1/1-0038/single_tap_pressed
 
 service charger /system/bin/chargeonlymode
     override
