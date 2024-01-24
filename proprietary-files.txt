@@ -462,6 +462,7 @@ vendor/lib64/libgf_hal.so|5413148210ccdb0ad13abf01a51988fef0ad4f56
 vendor/lib64/libgoodixhwfingerprint.so|110080f7fb11dbe369576c99f406a6a9863a2d3f
 vendor/lib64/libmifpext.so|ebb96967494243037ae40337dbe960a7acb1204f
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so|39d820c32426a131ade6b946b0684cc8e2bc44bb
+vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so
 
 # Fingerprint - goodix.hardware.biometrics - from SPES MIUI
 vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so|8034b67ff67e649d3978e34b0a657c49daa94418
