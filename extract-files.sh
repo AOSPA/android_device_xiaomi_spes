@@ -14,11 +14,6 @@ function blob_fixup() {
             "${ANDROID_ROOT}"/prebuilts/clang/host/linux-x86/clang-r450784e/bin/llvm-strip --strip-debug "${2}"
             grep -q "libpiex_shim.so" "${2}" || ${PATCHELF} --add-needed "libpiex_shim.so" "${2}"
             ;;
-        # Use VNDK 32 libhidlbase
-        vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so)
-            "${PATCHELF_0_8}" --remove-needed "libhidlbase.so" "${2}"
-            sed -i "s/libhidltransport.so/libhidlbase-v32.so\x00/" "${2}"
-            ;;
     esac
 }
 

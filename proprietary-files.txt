@@ -453,19 +453,13 @@ vendor/etc/qdcm_calib_data_k7_38_0c_0b_video_mode_fhdp_dsi_panel.xml|515e3f81a7e
 vendor/etc/permissions/com.fingerprints.extension.xml|de711d8827e1d321b22b60fd75a204e8928f9c6d
 -vendor/framework/com.fingerprints.extension.jar|2541c37690508e8b43b838700afad9cf35522e73
 vendor/lib/libmifpext.so|54b5c9f7761cc60cac022973df23a9ff3dc56248
-vendor/lib/vendor.xiaomi.hardware.fingerprintextension@1.0.so|2832f96b602bfed48d70a1eaf8f899ec74e11ab9
 vendor/lib64/hw/fingerprint.fpc.default.so|8cd20aee7268bccf9f9165e8c68778527356919a
 vendor/lib64/hw/fingerprint.goodix.default.so|3ca323582c1cebd860e83199233da32c60b59193
-vendor/lib64/com.fingerprints.extension@1.0.so|8daa1351456c3d4fc6b20e2b42986b950170e654
 vendor/lib64/libgf_ca.so|44b4a6afb7cca14c36fb03c87c37ba22086e0105
 vendor/lib64/libgf_hal.so|5413148210ccdb0ad13abf01a51988fef0ad4f56
 vendor/lib64/libgoodixhwfingerprint.so|110080f7fb11dbe369576c99f406a6a9863a2d3f
 vendor/lib64/libmifpext.so|ebb96967494243037ae40337dbe960a7acb1204f
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so|39d820c32426a131ade6b946b0684cc8e2bc44bb
-vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so|57eff4df4038d1676496bcfe17a10103f3f140fe
-
-# Fingerprint - goodix.hardware.biometrics - from SPES MIUI
-vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so|8034b67ff67e649d3978e34b0a657c49daa94418
 
 # Graphic Firmware - from SPES MIUI
 vendor/firmware/a610_zap.b00|cdc0262ea8bc3fa3796be6150cd5430abeeeab8d
