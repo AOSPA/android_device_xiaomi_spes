@@ -16,15 +16,15 @@
 -->
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/oled_features_title" >
+    android:title="@string/oled_hbm_title" >
 
     <SwitchPreference
         android:key="hbm_pref"
         android:title="@string/oled_hbm_title" />
 
     <com.android.settingslib.widget.FooterPreference
-        android:key="oled_features_footer"
-        android:title="@string/oled_features_info"
+        android:key="oled_hbm_footer"
+        android:title="@string/oled_hbm_info"
         android:selectable="false"
         android:layout="@layout/preference_footer" />
 
