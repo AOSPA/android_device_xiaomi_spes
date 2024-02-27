@@ -14,5 +14,5 @@
 
 runtime_resource_overlay {
     name: "SpesSystemUIOverlay",
-    product_specific: true,
+    vendor: true,
 }
