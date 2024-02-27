@@ -1,11 +1,11 @@
 runtime_resource_overlay {
     name: "SpesWifiOverlay",
     manifest: "AndroidManifest.xml",
-    product_specific: true,
+    vendor: true,
 }
 
 runtime_resource_overlay {
     name: "SpesWifiMainline",
     manifest: "AndroidGoogleManifest.xml",
-    product_specific: true,
+    vendor: true,
 }

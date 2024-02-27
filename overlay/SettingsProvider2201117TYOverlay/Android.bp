@@ -14,5 +14,5 @@
 
 runtime_resource_overlay {
     name: "SettingsProvider2201117TYOverlay",
-    product_specific: true,
+    vendor: true,
 }
