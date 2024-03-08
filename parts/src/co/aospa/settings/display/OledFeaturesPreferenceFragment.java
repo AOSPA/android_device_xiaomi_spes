@@ -23,7 +23,7 @@ import android.os.SystemProperties;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragment;
-import androidx.preference.SwitchPreference;
+import androidx.preference.SwitchPreferenceCompat;
 
 import co.aospa.settings.R;
 import co.aospa.settings.utils.FileUtils;
@@ -39,7 +39,7 @@ public class OledFeaturesPreferenceFragment extends PreferenceFragment
 
     private static final String KEY_HBM = "hbm_pref";
 
-    private SwitchPreference mHbmPref;
+    private SwitchPreferenceCompat mHbmPref;
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
@@ -50,7 +50,7 @@ public class OledFeaturesPreferenceFragment extends PreferenceFragment
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         addPreferencesFromResource(R.xml.oled_features_settings);
-        mHbmPref = (SwitchPreference) findPreference(KEY_HBM);
+        mHbmPref = (SwitchPreferenceCompat) findPreference(KEY_HBM);
         restorePreferenceState();
         mHbmPref.setOnPreferenceChangeListener(this);
         validateKernelSupport();

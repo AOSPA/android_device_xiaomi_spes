@@ -18,7 +18,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/oled_hbm_title" >
 
-    <SwitchPreference
+    <SwitchPreferenceCompat
         android:key="hbm_pref"
         android:title="@string/oled_hbm_title" />
 
