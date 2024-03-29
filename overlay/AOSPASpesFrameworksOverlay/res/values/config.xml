@@ -17,7 +17,7 @@
 <resources>
 
     <!-- Fingerprint from stock ROM -->
-    <string name="config_stockFingerprint" translatable="false">Redmi/spes_global/spes:13/TKQ1.221114.001/V14.0.3.0.TGCMIXM:user/release-keys</string>
+    <string name="config_stockFingerprint" translatable="false">Redmi/spes_global/spes:13/TKQ1.221114.001/V816.0.3.0.TGCMIXM::user/release-keys</string>
 
     <!-- Defines the sysfs attribute path used by the device
          to enable/disable DC dimming. -->
