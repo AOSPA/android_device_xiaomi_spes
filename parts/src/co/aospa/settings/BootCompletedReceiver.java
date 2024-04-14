@@ -15,24 +15,12 @@ public class BootCompletedReceiver extends BroadcastReceiver {
     
     @Override
     public void onReceive(final Context context, Intent intent) {
-        Log.i(TAG, "Received intent: " + intent.getAction());
-
-        switch (intent.getAction()) {
-            case Intent.ACTION_LOCKED_BOOT_COMPLETED:
-                onLockedBootCompleted(context);
-                break;
-            case Intent.ACTION_BOOT_COMPLETED:
-                onBootCompleted(context);
-                break;
+        Log.d(TAG, "Received intent: " + intent.getAction());
+        if (!intent.getAction().equals(Intent.ACTION_LOCKED_BOOT_COMPLETED)) {
+            return;
         }
-    }
 
-    private static void onLockedBootCompleted(Context context) {
-        // Services that don't require reading from data.
-    }
-    
-    private static void onBootCompleted(Context context) {
-        // Data is now accessible (user has just unlocked).
+        Log.i(TAG, "Boot completed, starting services");
         RefreshUtils.initialize(context);
     }        
 }
