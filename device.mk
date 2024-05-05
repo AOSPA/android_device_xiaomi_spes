@@ -44,6 +44,7 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Camera
 PRODUCT_PACKAGES += \
+    libcamera_provider_shim \
     libpiex_shim
 
 # Consumer IR
