@@ -117,7 +117,7 @@ vendor/lib/libsurround_3mic_proc.so|e8e086123e0c1dc17f008f97edb3611cd4c702e1
 
 # Batterysecret - from SPES MIUI
 vendor/bin/batterysecret|ea136c977f292a3650ab82d5dca29087aa682161
-vendor/etc/init/init.batterysecret.rc|93b03fe5139f32fa17a006198a55cdc19570b252
+vendor/etc/init/init.batterysecret.rc|9d79202c40513d66dafc7c3ad1421d5e51480b57
 
 # Camera - from SPES MIUI
 system/lib/vendor.xiaomi.hardware.campostproc@1.0.so|c81d749ad623d6e7cd063ecc99a6c8daff499a5d

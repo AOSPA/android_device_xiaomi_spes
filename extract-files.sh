@@ -27,6 +27,9 @@ function blob_fixup() {
         vendor/lib64/libgf_ca.so)
             "${PATCHELF}" --remove-needed libhwbinder.so "${2}"
             ;;
+        vendor/etc/init/init.batterysecret.rc)
+            sed -i "/seclabel u:r:batterysecret:s0/d" "${2}"
+            ;;
     esac
 }
 
