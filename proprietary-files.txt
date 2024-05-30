@@ -102,7 +102,6 @@ vendor/lib/libaudcal.so|e233772c6285584968cc7635c7fb59e4e689e7e1
 vendor/lib/libaudioalsa.so|b1521744832c14b67095209955e5d8a440c491a7
 vendor/lib/libaudioconfigstore.so|c41f6f6aeb488155f7018f44e452b76fc014b72d
 vendor/lib/libaudioparsers.so|522d0f379103e431271d3c409f52814289c49a90
-vendor/lib/libbatterylistener.so|4c36265e5b26350856e4834de85183b8cc0ede79
 vendor/lib/libcirrusspkrprot.so|61f343b933bca1ad3ac0ed1f6665dc40330aab08
 vendor/lib/libcomprcapture.so|88fdc2d789d5a6ebf2c92dc9655c0363c7d5f35c
 vendor/lib/libdrc.so|b066f176f119847059c5aa148f73e1b042fbeab3
