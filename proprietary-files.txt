@@ -429,6 +429,10 @@ vendor/lib64/com.qti.feature2.swmf.so|141ce16ec803851acb3f26bfb42a1e84ae1c503c
 # Camera Postprocessing - from SPES MIUI
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|b250d988518158fe5a8dec1a3409519e1aa0cec0
 
+# Camera provider - from SPES MIUI
+vendor/lib/android.hardware.camera.provider@2.4-legacy.so|831d13da063a5265c4dbba852ea479165732b38e
+vendor/lib64/android.hardware.camera.provider@2.4-legacy.so|87b2807b4db92737ac0fab9af3df58bfb5d82465
+
 # Camera Sensor - from SPES MIUI
 vendor/lib64/libmmcamera_cac3.so|1c1c29bb35e4a109d16a07056dbd5c6ee5465d6f
 vendor/lib64/libmmcamera_faceproc.so|e96b400c33efa56f7c0d01b642ca1cf277b380ac
