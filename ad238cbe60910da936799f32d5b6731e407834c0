@@ -1,4 +1,22 @@
 {
-  "comments": [],
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "58eca31e_796087c1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000469
+      },
+      "writtenOn": "2024-07-19T11:50:34Z",
+      "side": 1,
+      "message": "shouldn\u0027t this be in vendor/aospa?",
+      "revId": "ad238cbe60910da936799f32d5b6731e407834c0",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ],
   "submitRequirementResults": []
 }
