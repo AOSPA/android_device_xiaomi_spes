@@ -73,7 +73,6 @@ public class OledFeaturesPreferenceFragment extends PreferenceFragment
             SystemProperties.set(HBM_PROP,
                 String.valueOf(isHbmEnabled ? HBM_MODE_ON : HBM_MODE_OFF));
         }
-
         return true;
     }
 
