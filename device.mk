@@ -86,24 +86,19 @@ PRODUCT_ODM_PROPERTIES += \
     media.settings.xml=/vendor/etc/media_profiles_khaje.xml
 
 # NFC
-$(call inherit-product, hardware/st/nfc/nfc_vendor_product.mk)
+TARGET_COMMON_QTI_COMPONENTS += \
+    nfc
+
+TARGET_USES_NQ_NFC := false
+TARGET_USES_ST_NFC := true
+TARGET_USES_ST_AIDL_NFC := true
+
+TARGET_NFC_SKU := k7tn
 ODM_MANIFEST_SKUS += $(TARGET_NFC_SKU)
 ODM_MANIFEST_K7TN_FILES := hardware/st/nfc/aidl/nfc-service-default.xml
-TARGET_USES_ST_AIDL_NFC := true
-TARGET_NFC_SKU := k7tn
-
-PRODUCT_PACKAGES += \
-    com.android.nfc_extras \
-    libchrome.vendor \
-    NfcNci \
-    SecureElement \
-    Tag
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/nfc/libnfc-hal-st.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-hal-st.conf
-
-PRODUCT_SYSTEM_PROPERTIES += \
-    ro.nfc.port=I2C
 
 # Overlays
 PRODUCT_PACKAGES += \
