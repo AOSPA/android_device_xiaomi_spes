@@ -18,7 +18,6 @@ DEVICE_PATH := device/xiaomi/spes
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 
 # HIDL
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/configs/hidl/xiaomi_framework_compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/xiaomi_manifest.xml
 
 # Init
