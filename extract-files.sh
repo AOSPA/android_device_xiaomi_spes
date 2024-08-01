@@ -20,6 +20,9 @@ function blob_fixup() {
         vendor/bin/batterysecret | vendor/lib64/hw/fingerprint.fpc.default.so | vendor/lib64/libgoodixhwfingerprint.so | vendor/lib64/sensors.touch.detect.so)
             "${PATCHELF}" --remove-needed libhidltransport.so "${2}"
             ;;
+        vendor/lib64/libgoodixhwfingerprint.so | vendor/lib64/libgf_ca.so)
+            "${PATCHELF}" --remove-needed libhwbinder.so "${2}"
+            ;;
     esac
 }
 
