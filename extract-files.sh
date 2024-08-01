@@ -20,6 +20,9 @@ function blob_fixup() {
         vendor/bin/batterysecret)
             "${PATCHELF}" --remove-needed libhidltransport.so "${2}"
             ;;
+        vendor/bin/vendor/lib64/libgoodixhwfingerprint)
+            "${PATCHELF}" --remove-needed libhwbinder.so "${2}"
+            ;;
     esac
 }
 
