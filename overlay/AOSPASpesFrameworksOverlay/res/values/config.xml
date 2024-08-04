@@ -26,7 +26,4 @@
     <!-- Whether usage of the proximity sensor during doze is supported -->
     <bool name="doze_proximity_sensor_supported">false</bool>
 
-    <!-- Pocket Lock -->
-    <bool name="config_pocketModeSupported">true</bool>
-
 </resources>
