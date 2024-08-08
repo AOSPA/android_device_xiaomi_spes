@@ -116,8 +116,13 @@ vendor/lib/libssrec.so|44e5d6fb497c564b8a8b46c909fa151ee722a24e
 vendor/lib/libsurround_3mic_proc.so|e8e086123e0c1dc17f008f97edb3611cd4c702e1
 
 # Batterysecret - from SPES MIUI
+<<<<<<< HEAD
 vendor/bin/batterysecret|ea136c977f292a3650ab82d5dca29087aa682161
 vendor/etc/init/init.batterysecret.rc|9d79202c40513d66dafc7c3ad1421d5e51480b57
+=======
+vendor/bin/batterysecret|58c75096366cf981b4a1f1cea1f41a392ac0d07b
+vendor/etc/init/init.batterysecret.rc|93b03fe5139f32fa17a006198a55cdc19570b252
+>>>>>>> parent of 7b53450 (spes: Remove libhidltransport dependency)
 
 # Camera - from SPES MIUI
 system/lib/vendor.xiaomi.hardware.campostproc@1.0.so|c81d749ad623d6e7cd063ecc99a6c8daff499a5d
@@ -462,11 +467,11 @@ vendor/etc/qdcm_calib_data_k7_38_0c_0b_video_mode_fhdp_dsi_panel.xml|515e3f81a7e
 vendor/etc/permissions/com.fingerprints.extension.xml|de711d8827e1d321b22b60fd75a204e8928f9c6d
 -vendor/framework/com.fingerprints.extension.jar|2541c37690508e8b43b838700afad9cf35522e73
 vendor/lib/libmifpext.so|54b5c9f7761cc60cac022973df23a9ff3dc56248
-vendor/lib64/hw/fingerprint.fpc.default.so|a3bc30e235c40ce690919f6168c4d71e90c4a187
+vendor/lib64/hw/fingerprint.fpc.default.so|8cd20aee7268bccf9f9165e8c68778527356919a
 vendor/lib64/hw/fingerprint.goodix.default.so|3ca323582c1cebd860e83199233da32c60b59193
 vendor/lib64/libgf_ca.so|44b4a6afb7cca14c36fb03c87c37ba22086e0105
 vendor/lib64/libgf_hal.so|5413148210ccdb0ad13abf01a51988fef0ad4f56
-vendor/lib64/libgoodixhwfingerprint.so|594d2f15cf142d5d30a796360a29df45651ee9ee
+vendor/lib64/libgoodixhwfingerprint.so|110080f7fb11dbe369576c99f406a6a9863a2d3f
 vendor/lib64/libmifpext.so|ebb96967494243037ae40337dbe960a7acb1204f
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so|39d820c32426a131ade6b946b0684cc8e2bc44bb
 
@@ -565,7 +570,7 @@ vendor/lib64/libssc.so|6ae5e37029f9a9f33edf1cd47d1bc66a41802c6d
 vendor/lib64/libssc_default_listener.so|1653233f7454f3be9e8361ab5fde7cd45e9ac9b4
 vendor/lib64/libsnsapi.so|208be1707a670165ced8fa863c28b1ac8923e6c4
 vendor/lib64/sensors.ssc.so|a229f862687b32ae3dfb648b7cb7936be126242e
-vendor/lib64/sensors.touch.detect.so|e641ee1129ac47e37263930bcb3ff6581952267a
+vendor/lib64/sensors.touch.detect.so|0fe0b39a02d619dbaf56c80ee598c541e121b94a
 
 # Sensors Config - from SPES MIUI
 vendor/etc/sensors/config/bengal_adux1050_0.json|53601ab299579f4f88793471c4346b523a46f48f
