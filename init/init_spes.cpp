@@ -87,7 +87,7 @@ void vendor_load_properties()
         set_device_props("2201117TY", "spesn_global", "Redmi Note 11 NFC", "spesn_global");
     } else { // Redmi Note 11
         string region = GetProperty("ro.boot.hwc", "");
-        if (region == "IN") // Redmi Note 11 India
+        if (region == "India") // Redmi Note 11 India
             set_device_props("2201117TI", "spes_in", "Redmi Note 11", "spes_in_global");
         else // Redmi Note 11 Global
             set_device_props("2201117TG", "spes_global", "Redmi Note 11", "spes_global");
