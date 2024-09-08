@@ -27,6 +27,8 @@ TARGET_IS_VAB := true
 PRODUCT_VIRTUAL_AB_OTA := true
 
 # Audio
+TARGET_PROVIDES_AUDIO_HAL := true
+
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.vendor.audio.spk.stereo=true \
     ro.vendor.audio.us.proximity=true
