@@ -455,7 +455,7 @@ vendor/etc/qdcm_calib_data_k7_38_0c_0b_video_mode_fhdp_dsi_panel.xml|515e3f81a7e
 vendor/etc/permissions/com.fingerprints.extension.xml|de711d8827e1d321b22b60fd75a204e8928f9c6d
 vendor/framework/com.fingerprints.extension.jar|2541c37690508e8b43b838700afad9cf35522e73
 vendor/lib64/hw/fingerprint.fpc.default.so|a3bc30e235c40ce690919f6168c4d71e90c4a187
-vendor/lib64/hw/fingerprint.goodix.default.so;FIX_SONAME|3ca323582c1cebd860e83199233da32c60b59193
+vendor/lib64/hw/fingerprint.goodix.default.so|3ca323582c1cebd860e83199233da32c60b59193
 vendor/lib64/libgf_ca.so|44b4a6afb7cca14c36fb03c87c37ba22086e0105
 vendor/lib64/libgf_hal.so|5413148210ccdb0ad13abf01a51988fef0ad4f56
 vendor/lib64/libgoodixhwfingerprint.so;DISABLE_CHECKELF|594d2f15cf142d5d30a796360a29df45651ee9ee
