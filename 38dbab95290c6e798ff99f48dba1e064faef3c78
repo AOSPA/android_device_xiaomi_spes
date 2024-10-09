@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e58eb75d_e1dda442",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000890
+      },
+      "writtenOn": "2024-10-09T22:10:01Z",
+      "side": 1,
+      "message": "Add sensor x location too as well as display ID",
+      "revId": "38dbab95290c6e798ff99f48dba1e064faef3c78",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
