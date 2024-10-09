@@ -363,20 +363,6 @@
         black in software (to avoid aliasing or emulate a cutout that is not physically existent).
     -->
     <bool name="config_fillMainBuiltInDisplayCutout">true</bool>
-    
-    <!-- An array of arrays of side fingerprint sensor properties relative to each display.
-         Note: this value is temporary and is expected to be queried directly
-         from the HAL in the future. -->
-    <array name="config_sfps_sensor_props" translatable="false">
-        <item>@array/config_sfps_sensor_props_0</item>
-    </array>
-
-    <array name="config_sfps_sensor_props_0" translatable="false">
-        <item></item>
-        <item></item>
-        <item>930</item> <!--item>sensorLocationY</item-->
-        <item>150</item> <!--item>sensorRadius</item-->
-    </array>
 
     <!-- Whether device has a big physical display cutout -->
     <bool name="config_physicalDisplayCutout">true</bool>
