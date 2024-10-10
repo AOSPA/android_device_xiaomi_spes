@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "22c34daf_691619ac",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000890
+      },
+      "writtenOn": "2024-10-10T20:40:21Z",
+      "side": 1,
+      "message": "https://github.com/yaap/device_xiaomi_sunny/commit/68176ab536213cf1d822546c64d9f9b6da589599",
+      "revId": "2dae5b6a708294d685c89f91f73ced8764791555",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
