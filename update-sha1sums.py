@@ -52,9 +52,14 @@ def update():
 
         if needSHA1:
             # Remove existing SHA1 hash
-            line = line.split('|')[0]
+            terms = line.split('|')
+            if len(terms) == 3:
+                # Keep the first hash in case of kanged + patched blob
+                line = '%s|%s' % (terms[0], terms[1])
+            else:
+                line = terms[0]
 
-            filePath = line.split(';')[0].split(':')[-1]
+            filePath = terms[0].split(';')[0].split(':')[-1]
             if filePath[0] == '-':
                 filePath = filePath[1:]
 
