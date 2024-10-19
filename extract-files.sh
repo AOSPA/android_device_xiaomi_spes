@@ -20,11 +20,6 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             grep -q "libcamera_provider_shim.so" "${2}" || "${PATCHELF}" --add-needed "libcamera_provider_shim.so" "${2}"
             ;;
-        vendor/bin/batterysecret | vendor/lib/hw/*.so | vendor/lib/*.so | vendor/lib64/hw/*.so | vendor/lib64/*.so)
-            [ "$2" = "" ] && return 0
-            "${PATCHELF}" --remove-needed libhidltransport.so "${2}"
-            "${PATCHELF}" --remove-needed libhwbinder.so "${2}"
-            ;;
         vendor/etc/init/init.batterysecret.rc)
             [ "$2" = "" ] && return 0
             sed -i "/seclabel u:r:batterysecret:s0/d" "${2}"
