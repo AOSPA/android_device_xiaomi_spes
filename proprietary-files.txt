@@ -1,6 +1,14 @@
 # All SPES MIUI blobs below are extracted from SPES HyperOS V816.0.3.0.TGCMIXM
 
 # ACDB - from SPES MIUI
+vendor/etc/acdbdata/IDP/IDP_Bluetooth_cal.acdb|a259f39b254fbf402f899397a76032daefc18fae
+vendor/etc/acdbdata/IDP/IDP_General_cal.acdb|02c1596f6d424245db42983cd74f775c3118d9ae
+vendor/etc/acdbdata/IDP/IDP_Global_cal.acdb|26c07c3fed306a19a900d2a53fdfd479a4f7b80b
+vendor/etc/acdbdata/IDP/IDP_Handset_cal.acdb|77daf574b16fe93b7e10dbefb9959896fb40a21c
+vendor/etc/acdbdata/IDP/IDP_Hdmi_cal.acdb|69b0a218e3d90eb36138958bf155a938b13bf2b5
+vendor/etc/acdbdata/IDP/IDP_Headset_cal.acdb|eecb4d1bbdb8aed87815d1a1bd8be8e696597ff3
+vendor/etc/acdbdata/IDP/IDP_Speaker_cal.acdb|5dfecac6b117521afee1059665fcab96bc44978d
+vendor/etc/acdbdata/IDP/IDP_workspaceFile.qwsp|3bea41b8925da29eec4885062c3faa4242def87c
 vendor/etc/acdbdata/IDP/bengal-scubaidp-snd-card/IDP_Scuba_Bluetooth_cal.acdb|0cc92d7ce081e30ccaa203b3591f592d7ca36a6d
 vendor/etc/acdbdata/IDP/bengal-scubaidp-snd-card/IDP_Scuba_General_cal.acdb|bc72b6775db86bb57a74a2e8d70af50174ecc093
 vendor/etc/acdbdata/IDP/bengal-scubaidp-snd-card/IDP_Scuba_Global_cal.acdb|bdddacdd713b79c5a5f356fa204d26e751f6f389
@@ -17,22 +25,6 @@ vendor/etc/acdbdata/IDP/india/INDIA_Hdmi_cal.acdb|69b0a218e3d90eb36138958bf155a9
 vendor/etc/acdbdata/IDP/india/INDIA_Headset_cal.acdb|eecb4d1bbdb8aed87815d1a1bd8be8e696597ff3
 vendor/etc/acdbdata/IDP/india/INDIA_Speaker_cal.acdb|0218bbf8398bd217df159c09a4261bf4c882dc59
 vendor/etc/acdbdata/IDP/india/INDIA_workspaceFile.qwsp|c2399a5252a6453f97d71659f2bd137a372a4169
-vendor/etc/acdbdata/IDP/IDP_Bluetooth_cal.acdb|a259f39b254fbf402f899397a76032daefc18fae
-vendor/etc/acdbdata/IDP/IDP_General_cal.acdb|02c1596f6d424245db42983cd74f775c3118d9ae
-vendor/etc/acdbdata/IDP/IDP_Global_cal.acdb|26c07c3fed306a19a900d2a53fdfd479a4f7b80b
-vendor/etc/acdbdata/IDP/IDP_Handset_cal.acdb|77daf574b16fe93b7e10dbefb9959896fb40a21c
-vendor/etc/acdbdata/IDP/IDP_Hdmi_cal.acdb|69b0a218e3d90eb36138958bf155a938b13bf2b5
-vendor/etc/acdbdata/IDP/IDP_Headset_cal.acdb|eecb4d1bbdb8aed87815d1a1bd8be8e696597ff3
-vendor/etc/acdbdata/IDP/IDP_Speaker_cal.acdb|5dfecac6b117521afee1059665fcab96bc44978d
-vendor/etc/acdbdata/IDP/IDP_workspaceFile.qwsp|3bea41b8925da29eec4885062c3faa4242def87c
-vendor/etc/acdbdata/QRD/bengal-scubaqrd-snd-card/QRD_Scuba_Bluetooth_cal.acdb|cf265e2cc54e02e0fcf99ff8138dc488c6965e29
-vendor/etc/acdbdata/QRD/bengal-scubaqrd-snd-card/QRD_Scuba_General_cal.acdb|2d7cae8fc26f8c3221f6eaf2c7542f0103c47830
-vendor/etc/acdbdata/QRD/bengal-scubaqrd-snd-card/QRD_Scuba_Global_cal.acdb|6b71b3a6d24773cf7694896e949139ddd8eede0d
-vendor/etc/acdbdata/QRD/bengal-scubaqrd-snd-card/QRD_Scuba_Handset_cal.acdb|0b637d0b6573117c350fdb6ee8668b520369b3ab
-vendor/etc/acdbdata/QRD/bengal-scubaqrd-snd-card/QRD_Scuba_Hdmi_cal.acdb|60b9bfaf9856c7d6ca21bdb8e4263f174d2d71c9
-vendor/etc/acdbdata/QRD/bengal-scubaqrd-snd-card/QRD_Scuba_Headset_cal.acdb|afc40e84a8c97780904e3442492e45259f9145df
-vendor/etc/acdbdata/QRD/bengal-scubaqrd-snd-card/QRD_Scuba_Speaker_cal.acdb|1af7d0c6d2a2cefca938d694c5a4ba9296d89293
-vendor/etc/acdbdata/QRD/bengal-scubaqrd-snd-card/QRD_Scuba_workspaceFile.qwsp|f6fb9602af3e848d19d35a35a38eeea46ee938f4
 vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb|685e2e2dd6f7ea768d9d4799a799c26073c6235d
 vendor/etc/acdbdata/QRD/QRD_General_cal.acdb|81682f3dc4f07495bda520db4a39ced464a19333
 vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb|3fa1e227690c83d5a3ec293fbf567ac6050ac1b4
@@ -41,10 +33,18 @@ vendor/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb|7338ee9f3a8b31e957ec81e8fdf0a2dbaeeadf
 vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb|2c4ca70c0aa4bd778867663e30ae512a505b6943
 vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb|dd108d48a2eb8ee322d68eb498904b56251440b3
 vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp|746f937fb06994665f47ee748de57f410da58b25
+vendor/etc/acdbdata/QRD/bengal-scubaqrd-snd-card/QRD_Scuba_Bluetooth_cal.acdb|cf265e2cc54e02e0fcf99ff8138dc488c6965e29
+vendor/etc/acdbdata/QRD/bengal-scubaqrd-snd-card/QRD_Scuba_General_cal.acdb|2d7cae8fc26f8c3221f6eaf2c7542f0103c47830
+vendor/etc/acdbdata/QRD/bengal-scubaqrd-snd-card/QRD_Scuba_Global_cal.acdb|6b71b3a6d24773cf7694896e949139ddd8eede0d
+vendor/etc/acdbdata/QRD/bengal-scubaqrd-snd-card/QRD_Scuba_Handset_cal.acdb|0b637d0b6573117c350fdb6ee8668b520369b3ab
+vendor/etc/acdbdata/QRD/bengal-scubaqrd-snd-card/QRD_Scuba_Hdmi_cal.acdb|60b9bfaf9856c7d6ca21bdb8e4263f174d2d71c9
+vendor/etc/acdbdata/QRD/bengal-scubaqrd-snd-card/QRD_Scuba_Headset_cal.acdb|afc40e84a8c97780904e3442492e45259f9145df
+vendor/etc/acdbdata/QRD/bengal-scubaqrd-snd-card/QRD_Scuba_Speaker_cal.acdb|1af7d0c6d2a2cefca938d694c5a4ba9296d89293
+vendor/etc/acdbdata/QRD/bengal-scubaqrd-snd-card/QRD_Scuba_workspaceFile.qwsp|f6fb9602af3e848d19d35a35a38eeea46ee938f4
+vendor/etc/acdbdata/adsp_avs_config.acdb|c84e803f04af9b2d4cd7aade1e8e7a55cfecabc3
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd|247fa73e3b22ac1d8b98a601a9583bfd1e113879
 vendor/etc/acdbdata/nn_ns_models/fai__2.2.0_0.1__3.0.0_0.0__eai_1.00.pmd|92885cbda7ebaba86f07cc6974ba9a17cfac78f8
 vendor/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd|b761b7b9d0b2e782ec557b0c333cc3efa924db4f
-vendor/etc/acdbdata/adsp_avs_config.acdb|c84e803f04af9b2d4cd7aade1e8e7a55cfecabc3
 
 # ADSP Modules - from SPES MIUI
 vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so|7182a5728055dfdee15cd9518c1fdd576d813133
@@ -112,7 +112,7 @@ vendor/lib/libssrec.so;MODULE_SUFFIX=_spes;OVERRIDES=libssrec|44e5d6fb497c564b8a
 vendor/lib/libsurround_3mic_proc.so|e8e086123e0c1dc17f008f97edb3611cd4c702e1
 
 # Batterysecret - from SPES MIUI
-vendor/bin/batterysecret|ea136c977f292a3650ab82d5dca29087aa682161
+vendor/bin/batterysecret|58c75096366cf981b4a1f1cea1f41a392ac0d07b
 vendor/etc/init/init.batterysecret.rc|9d79202c40513d66dafc7c3ad1421d5e51480b57
 
 # Camera - from SPES MIUI
@@ -246,7 +246,7 @@ vendor/lib64/libalCFR.so|f43298c36502fbd6fdc42ae79f345197eaf87b2d
 vendor/lib64/libanc_dc_base.so|69c780ed20404f731fa9ec988d66310205e37560
 vendor/lib64/libbitmlengine.so|e13bbe2c68eaf959b8e51b1dbb7328e3dae4a58d
 vendor/lib64/libc++_shared.so|8bd494c3b1da5d250e0dc81231ea094fd0bccf88
-vendor/lib64/libc++_shared_vf.so;FIX_SONAME|4d2d2761ec5fda2dfc0b5f730b62958860ff8c05
+vendor/lib64/libc++_shared_vf.so;FIX_SONAME|738a7281b098ae60972e5e8c9c7e7261ae43d3a2
 vendor/lib64/libcamera_nn_stub.so|021d78556ca65492713b58fe67b4f6e3bc041776
 vendor/lib64/libcamera_scene.so|4faf256d31e7daa986707179a622b97eed19c81a
 vendor/lib64/libcamerapostproc.so|6b37a3dd5df05abd2e3ff2461f4aaf84a3e28fec
@@ -358,12 +358,6 @@ vendor/lib64/camera/components/com.vidhance.node.processing.so|f259935b53fb66587
 vendor/lib64/camera/components/com.qti.node.mialgocontrol.so;DISABLE_CHECKELF|87fa47ba5e9f55344729246706f1ed1ca7a9c481
 
 # Camera Configs - from SPES MIUI
-vendor/etc/camera/model/dof_model/capture_cache|852b45f60c33509f38e5f5dd2eb02a7004c203be
-vendor/etc/camera/model/dof_model/capture_model|3c8217aac7dff56551564575b38cb65c8fdad52f
-vendor/etc/camera/model/dof_model/capture_policy|688009ede0bd67e1be62b6e9fcafec341bc42716
-vendor/etc/camera/model/rt_model/preview_cache|6b38f64ecabe59f63d44ad0e2c45d6dab93694f0
-vendor/etc/camera/model/rt_model/preview_model|dd912903eca62e6a8e5e5dc2c43dae13f563fe3e
-vendor/etc/camera/model/rt_model/preview_policy|688009ede0bd67e1be62b6e9fcafec341bc42716
 vendor/etc/camera/102_SummerDay.png|854075e4570bbf561063a096dae0fe9d2151809d
 vendor/etc/camera/103_Fantasy.png|0eb52c60f767c4a9b26b22f4ee35ec646545a123
 vendor/etc/camera/104_Meet.png|f72dbf0c125237acb41a115dab40233e275fcf92
@@ -384,14 +378,20 @@ vendor/etc/camera/125_Latin.png|eac04636de0aeac2480a3be9d1f0e04f58ddfd0b
 vendor/etc/camera/126_Fantasy2.png|8b94fd32b66b3e88129618612f2603b9bdc0b3c9
 vendor/etc/camera/127_Creamy.png|71d1a5bc75edad2eb29ef58b1e41a18c55e5f609
 vendor/etc/camera/128_Sepia.png|ac5cf27142b07425c0775e8939ae2d99524ed622
-vendor/etc/camera/com.xiaomi.dcal.wd.golden|04cd342bffd4460d268c6ade33e6e1baccc092b8
 vendor/etc/camera/com.xiaomi.dcal.wd.golden_2|f674cf131b578ba4c6020c25d7d28342ebf1d389
 vendor/etc/camera/com.xiaomi.dcal.wd.golden_3|4ae0125856c584b9c39f7c2770c8d9a2bec20e60
+vendor/etc/camera/com.xiaomi.dcal.wd.golden|04cd342bffd4460d268c6ade33e6e1baccc092b8
 vendor/etc/camera/dof_mecp.bin|47857aaeaac0c32c3c8bd200d67efe8e1855179d
 vendor/etc/camera/hdrcheckerparamsettings.yml|d831d84390b66da676f2b8f823acf5e5f38b734f
 vendor/etc/camera/intsense_config_undistort.bin|3d1941ed841ad5c30ebe906f989437b239022935
 vendor/etc/camera/mibokeh_712_opencl.bin|7263568c30a8afa484f42bf5da2d5f55f0ef8f10
 vendor/etc/camera/mibokeh_712_parameter.bin|c4b98942d45e15be0d738b708df1f83151bad227
+vendor/etc/camera/model/dof_model/capture_cache|852b45f60c33509f38e5f5dd2eb02a7004c203be
+vendor/etc/camera/model/dof_model/capture_model|3c8217aac7dff56551564575b38cb65c8fdad52f
+vendor/etc/camera/model/dof_model/capture_policy|688009ede0bd67e1be62b6e9fcafec341bc42716
+vendor/etc/camera/model/rt_model/preview_cache|6b38f64ecabe59f63d44ad0e2c45d6dab93694f0
+vendor/etc/camera/model/rt_model/preview_model|dd912903eca62e6a8e5e5dc2c43dae13f563fe3e
+vendor/etc/camera/model/rt_model/preview_policy|688009ede0bd67e1be62b6e9fcafec341bc42716
 vendor/etc/camera/morpho_lowlight_2.0_aac_gc02m1_macro_global.xml|9bdd2b41d596bdab0745d6b88c10577e21f336f5
 vendor/etc/camera/morpho_lowlight_2.0_aac_gc02m1_macro_india.xml|8d6d045f6fc5de3b5ae4f5202d18cf6cd0c03e01
 vendor/etc/camera/morpho_lowlight_2.0_aac_gc08a3_ultra_global.xml|9d81421e4b9733b980efa592b48c5f96bc19829e
@@ -403,7 +403,7 @@ vendor/etc/camera/morpho_lowlight_2.0_ofilm_s5kjn1_wide_india.xml|cdc1ac72ab25a8
 vendor/etc/camera/vidhance_calibration|a7b903097b3fa6712e841b9be27a8ffe3aa0e2fb
 
 # Camera Device - from SPES MIUI
-vendor/lib/vendor.qti.hardware.camera.device@3.5.so
+vendor/lib/vendor.qti.hardware.camera.device@3.5.so|de60d040fb0aaea67f23cc80de81e2b04e2d3064
 vendor/lib64/vendor.qti.hardware.camera.device@3.5.so|a2b4a0439876fbe6733f99844e22228315a66ba6
 
 # Camera Feature - from SPES MIUI
@@ -429,7 +429,7 @@ vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|b250d988518
 
 # Camera provider - from SPES MIUI
 vendor/lib/android.hardware.camera.provider@2.4-legacy.so;MODULE_SUFFIX=_spes;OVERRIDES=android.hardware.camera.provider@2.4-legacy|d22ac69061c70ebfb2b22bc111dd998506603cb0
-vendor/lib64/android.hardware.camera.provider@2.4-legacy.so;MODULE_SUFFIX=_spes;OVERRIDES=android.hardware.camera.provider@2.4-legacy|35f53f627605eb72d5965de23944832a265629d4hvdcp_opti
+vendor/lib64/android.hardware.camera.provider@2.4-legacy.so;MODULE_SUFFIX=_spes;OVERRIDES=android.hardware.camera.provider@2.4-legacy|35f53f627605eb72d5965de23944832a265629d4
 
 # Camera Sensor - from SPES MIUI
 vendor/lib64/libmmcamera_cac3.so|1c1c29bb35e4a109d16a07056dbd5c6ee5465d6f
@@ -443,7 +443,7 @@ vendor/lib64/libmmcamera_mfnr_t4.so|d8eeef7b26f37f6802e17239225a67e05c977fc4
 vendor/bin/hvdcp_opti;MODULE_SUFFIX=_spes;OVERRIDES=hvdcp_opti|606c65c67f128aa6a91fb9567239ee32bcafe231
 
 # Consumer IR - from SPES MIUI
-vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.bengal.so;FIX_SONAME|bb96104803e2468d7982e6955dad14e6bd739939
+vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.bengal.so;FIX_SONAME|05f385d45910c1e4aa22e7dd8cbbfa849dd48786
 
 # Display Calibration - from SPES MIUI
 vendor/etc/dsi_panel_k7_38_0c_0a_fhdp_video_display_mi.xml|c8f211554503422183f800226229de79e5c06b6c
@@ -454,11 +454,11 @@ vendor/etc/qdcm_calib_data_k7_38_0c_0b_video_mode_fhdp_dsi_panel.xml|515e3f81a7e
 # Fingerprint - from SPES MIUI
 vendor/etc/permissions/com.fingerprints.extension.xml|de711d8827e1d321b22b60fd75a204e8928f9c6d
 vendor/framework/com.fingerprints.extension.jar|2541c37690508e8b43b838700afad9cf35522e73
-vendor/lib64/hw/fingerprint.fpc.default.so|a3bc30e235c40ce690919f6168c4d71e90c4a187
-vendor/lib64/hw/fingerprint.goodix.default.so|3ca323582c1cebd860e83199233da32c60b59193
+vendor/lib64/hw/fingerprint.fpc.default.so|8cd20aee7268bccf9f9165e8c68778527356919a
+vendor/lib64/hw/fingerprint.goodix.default.so|8da5e12be4ce54eea79df5126956f501ea62ceb3
 vendor/lib64/libgf_ca.so|44b4a6afb7cca14c36fb03c87c37ba22086e0105
 vendor/lib64/libgf_hal.so|5413148210ccdb0ad13abf01a51988fef0ad4f56
-vendor/lib64/libgoodixhwfingerprint.so;DISABLE_CHECKELF|594d2f15cf142d5d30a796360a29df45651ee9ee
+vendor/lib64/libgoodixhwfingerprint.so;DISABLE_CHECKELF|110080f7fb11dbe369576c99f406a6a9863a2d3f
 vendor/lib64/libmifpext.so|ebb96967494243037ae40337dbe960a7acb1204f
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so|39d820c32426a131ade6b946b0684cc8e2bc44bb
 
@@ -539,27 +539,28 @@ vendor/firmware/st21nfc_fw.bin|ca308173c4272a1288a49df38d9ddee4f8f14957
 vendor/firmware/st21nfc_fw7.bin|09853bac356e0f926badddcdb6b6f0c0d6239060
 
 # Power-off charging daemon - from SPES MIUI
-system/bin/charger:system/bin/chargeonlymode;FIX_SONAME|8078516cb5b463167b709f02dce94792050c485b
+system/bin/charger:system/bin/chargeonlymode;FIX_SONAME|762c4757840918a22a5b6ef4d5a9af99cb817b6d
 
 # Sensors - from SPES MIUI
 vendor/bin/init.qcom.sensors.sh|454c6de8c65b9ad1c41f063544871a4ba0665689
 vendor/bin/sensors.qti|afba8bd5ca1637287d1ade5e5ae4cea483c42726
 vendor/bin/sscrpcd|c233c02124098beb8add6cc7d5e99d1b8ca9e072
+vendor/etc/elliptic_sensor.xml|2a38626bb26d9def04d2a34167440c2ee1a41bc1
 vendor/etc/init/init.vendor.sensors.rc|8d286f50fd261dc8843c6a208386b535cc07641e
 vendor/etc/init/vendor.sensors.qti.rc|f34fc966af816b50f10ae7520b33863961a14478
 vendor/etc/init/vendor.sensors.sscrpcd.rc|df52901f1ad0fbc97d6070e28896a6be40154814
-vendor/etc/elliptic_sensor.xml|2a38626bb26d9def04d2a34167440c2ee1a41bc1
 vendor/lib64/hw/sensors.elliptic@2.0.so|c19dfafbb3fb4ae8372c8b57fb02d08af5f98c50
-vendor/lib64/libnotifyaudiohal.so;FIX_SONAME|dacd0783b6b06c2ccb60510bf62d8cb16e42dcdd
+vendor/lib64/libnotifyaudiohal.so;FIX_SONAME|ebbef353598426ea9fe0d2c591c32c8260203814
 vendor/lib64/libsensorcal.so|cc3def96d5514b5dfda60251a6a70a15797f2a04
 vendor/lib64/libsensorslog.so|5279ee2022daabd375685af69c5ac7c1dcfcb77d
+vendor/lib64/libsnsapi.so|208be1707a670165ced8fa863c28b1ac8923e6c4
 vendor/lib64/libssc.so|6ae5e37029f9a9f33edf1cd47d1bc66a41802c6d
 vendor/lib64/libssc_default_listener.so|1653233f7454f3be9e8361ab5fde7cd45e9ac9b4
-vendor/lib64/libsnsapi.so|208be1707a670165ced8fa863c28b1ac8923e6c4
 vendor/lib64/sensors.ssc.so|a229f862687b32ae3dfb648b7cb7936be126242e
-vendor/lib64/sensors.touch.detect.so|e641ee1129ac47e37263930bcb3ff6581952267a
+vendor/lib64/sensors.touch.detect.so|0fe0b39a02d619dbaf56c80ee598c541e121b94a
 
 # Sensors Config - from SPES MIUI
+vendor/etc/sensor_diag.cfg|ad39511c15df2a2279ddbb4f056071704b9ec891
 vendor/etc/sensors/config/bengal_adux1050_0.json|53601ab299579f4f88793471c4346b523a46f48f
 vendor/etc/sensors/config/bengal_bu27030_0.json|787ea8aebdeb740b97112e2ebda0f0b297225c66
 vendor/etc/sensors/config/bengal_bu52053nvx_0.json|c1a24cdcc8b9391c38e02f94bf00f0453cfc7a86
@@ -614,7 +615,6 @@ vendor/etc/sensors/config/sns_tilt_sw_enabled.json|122eaf6ede0ea0bbfa9e6c083bdc6
 vendor/etc/sensors/config/sns_tilt_to_wake.json|667b18162988656e46b0b67d4f1b3cc2fd855e3e
 vendor/etc/sensors/config/sns_wrist_pedo.json|3f6298f23c182c16585dbef20c419ce5353842b5
 vendor/etc/sensors/sns_reg_config|d516cd2088b375d75e83b3a6d093f6290396f4db
-vendor/etc/sensor_diag.cfg|ad39511c15df2a2279ddbb4f056071704b9ec891
 
 # Thermal - from SPES MIUI
 vendor/etc/thermal-normal.conf|670b7a3153bda4102e56e4b86e9ceece2f24947c
@@ -632,8 +632,8 @@ vendor/etc/thermal-navigation.conf|566eeaac0a274ebfab385ba00e3850861a0132a9
 vendor/etc/thermal-nolimits.conf|830225487652441ee1ee1992c410de9903af1ca9
 vendor/etc/thermal-phone.conf|ad9c6a62ab50c6ee66066c60914aaea0227b88dc
 vendor/etc/thermal-tgame.conf|669f40a9f26efc66e4e990123d9f01bf6026f0c0
-vendor/etc/thermal-videochat.conf|e3d2c4c22bc2e648b26a9552d99301995df9f4bc
 vendor/etc/thermal-video.conf|566eeaac0a274ebfab385ba00e3850861a0132a9
+vendor/etc/thermal-videochat.conf|e3d2c4c22bc2e648b26a9552d99301995df9f4bc
 vendor/etc/thermal-youtube.conf|473079df4d3aa7569148b781d834380293701386
 vendor/etc/thermald-devices.conf|eaa11ec5435404df861a76e5c857e93028ed7ef4
 vendor/lib64/libthermalclient.so|2c77941348a6dae4f41dfffdb49bc29c7efe20be
