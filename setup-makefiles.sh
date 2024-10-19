@@ -5,6 +5,14 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+function vendor_imports() {
+    cat << EOF >> "$1"
+        "device/xiaomi/spes",
+		"device/xiaomi/sm6225-common",
+		"hardware/xiaomi",
+EOF
+}
+
 # If we're being sourced by the common script that we called,
 # stop right here. No need to go down the rabbit hole.
 if [ "${BASH_SOURCE[0]}" != "${0}" ]; then
