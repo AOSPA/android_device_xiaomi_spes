@@ -41,11 +41,6 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
-# Camera
-PRODUCT_PACKAGES += \
-    libcamera_provider_shim \
-    libpiex_shim
-
 # Consumer IR
 PRODUCT_PACKAGES += \
     android.hardware.ir-service.example
@@ -68,10 +63,7 @@ PRODUCT_VENDOR_PROPERTIES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.xiaomi \
-    com.fingerprints.extension@1.0.vendor \
-    libvendor.goodix.hardware.biometrics.fingerprint@2.1.vendor \
-    vendor.xiaomi.hardware.fingerprintextension@1.0.vendor
+    android.hardware.biometrics.fingerprint@2.3-service.xiaomi
 
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.hardware.fp.sideCap=true
