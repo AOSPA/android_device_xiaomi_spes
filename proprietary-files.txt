@@ -74,15 +74,9 @@ vendor/lib/rfsa/adsp/misound_res_spk.bin|543bd5d9d2b00bf6aa3319895c0a366f4076327
 # Audio Configs - from SPES MIUI
 vendor/etc/audio_platform_info_scubaidp.xml|4eed714b7c1ffea16951182182e820a63e4927ac
 vendor/etc/audio_platform_info_scubaqrd.xml|e9a5de1c8ac576bff4588848f97c266b95a21d8d
-vendor/etc/audio_policy_volumes.xml|21c901ffc2b30850d720d28d8beb4b7e40dc4c89
-vendor/etc/bluetooth_qti_audio_policy_configuration.xml|436db4c2774eeab6133b0b3d968d73b8090c9909
-vendor/etc/default_volume_tables.xml|35722acb2dd36ed2a3850a66849c94b904813aa0
-vendor/etc/media_codecs_vendor_audio.xml|8c0937ea0ac24922985ff21ef751f2eb103c4311
 vendor/etc/mixer_paths_scubaidp.xml|0d9f75eb4cb5fed17dbe7bbd6be4d1f6ee8463ce
 vendor/etc/mixer_paths_scubaqrd.xml|24175e57b6d429e96a8fff55c961753f7d10d121
-vendor/etc/r_submix_audio_policy_configuration.xml|8140e8e1cfb8a51ce655bfa7b166845b594a9e6f
 vendor/etc/sound_trigger_platform_info.xml|cad8a8716b1748a14bc56032ccb2182067b080b4
-vendor/etc/usb_audio_policy_configuration.xml|ff1a862db0102d8c6cae81e8de0060243df29bcd
 
 # Audio Firmware - from SPES MIUI
 vendor/firmware/aw87xxx_acf.bin|d5d670071e7bc0cd31f7fc8a2209f102e4a0b2c3
@@ -102,17 +96,10 @@ vendor/lib/libaudcal.so|e233772c6285584968cc7635c7fb59e4e689e7e1
 vendor/lib/libaudioalsa.so|b1521744832c14b67095209955e5d8a440c491a7
 vendor/lib/libaudioconfigstore.so|c41f6f6aeb488155f7018f44e452b76fc014b72d
 vendor/lib/libaudioparsers.so|522d0f379103e431271d3c409f52814289c49a90
-vendor/lib/libcirrusspkrprot.so|61f343b933bca1ad3ac0ed1f6665dc40330aab08
-vendor/lib/libcomprcapture.so|88fdc2d789d5a6ebf2c92dc9655c0363c7d5f35c
 vendor/lib/libdrc.so|b066f176f119847059c5aa148f73e1b042fbeab3
-vendor/lib/libexthwplugin.so|a115d6707ae1edb9246a4d82dea06acd6101e468
-vendor/lib/libhdmiedid.so|adad95be95301e8ffbf0a630b726e7b62c178c57
 vendor/lib/libhdmipassthru.so|b67150cf9a5e30f61cbd21fdfe0f2633a453b383
-vendor/lib/libhfp.so|06ec8733eb192a498ad88ee923e24cc4c41aa3f3
 vendor/lib/libqtigef.so|cc747f5312e59ed6e436244f16af82987dca4dbd
-vendor/lib/libsndmonitor.so|1682e82f0ceff2eb439f89caaf026aa505b18c82
-vendor/lib/libspkrprot.so|b7bbc0adc502d14febfc6ca284679c081e840916
-vendor/lib/libssrec.so|44e5d6fb497c564b8a8b46c909fa151ee722a24e
+vendor/lib/libssrec.so|44e5d6fb497c564b8a8libI420colorconvertb46c909fa151ee722a24e
 vendor/lib/libsurround_3mic_proc.so|e8e086123e0c1dc17f008f97edb3611cd4c702e1
 
 # Batterysecret - from SPES MIUI
@@ -243,7 +230,6 @@ vendor/lib64/camera/fdconfigvideolite.bin|60d9b03eeaf3946d53ee5c94dbb587649cf787
 vendor/lib64/hw/camera.qcom.so|bc30c94386d2bc23685614165a54cca1a1e9dab4
 vendor/lib64/hw/com.qti.chi.override.so|8b9139207c2837694a23b5f4ceeb8a6394e4146f
 vendor/lib64/libHalSuperSensorServer.so|c5051788ca61c19b79f1cbce2bf0f6c0b2908c6a
-vendor/lib64/libI420colorconvert.so|974e94bee4eb525b5e8fa716ff0b8b6224a8c36e
 vendor/lib64/libSuperSensor.so|eccb4d06525cf8853f2f0a3048602c3e01c5b26b
 vendor/lib64/libSuperSensorCPU.so|f0c373f6390e123db83f1ce419d212f75b8c8e74
 vendor/lib64/libaidenoiser.so|401845bf40943e75f5ade28e62eed34c3776a1b6
@@ -408,7 +394,6 @@ vendor/etc/camera/morpho_lowlight_2.0_ofilm_s5kjn1_wide_india.xml|cdc1ac72ab25a8
 vendor/etc/camera/vidhance_calibration|a7b903097b3fa6712e841b9be27a8ffe3aa0e2fb
 
 # Camera Device - from SPES MIUI
-vendor/lib64/vendor.qti.hardware.camera.device@1.0.so|7539c1b3b28964214362668af11b69b0b19632f6
 vendor/lib64/vendor.qti.hardware.camera.device@3.5.so|a2b4a0439876fbe6733f99844e22228315a66ba6
 
 # Camera Feature - from SPES MIUI
