@@ -82,11 +82,11 @@ vendor/etc/sound_trigger_platform_info.xml|cad8a8716b1748a14bc56032ccb2182067b08
 vendor/firmware/aw87xxx_acf.bin|d5d670071e7bc0cd31f7fc8a2209f102e4a0b2c3
 
 # Audio HAL - from SPES MIUI
-vendor/lib/hw/audio.primary.bengal.so|a4b8945137e0eb87e8260c780c1316502f1cc950
+vendor/lib/hw/audio.primary.bengal.so;MODULE_SUFFIX=_spes;OVERRIDES=audio.primary.bengal|a4b8945137e0eb87e8260c780c1316502f1cc950
 vendor/lib/libaudio_log_utils.so|4bb503a7c4a866ae183bf91073dccc8f35ea9133
 
 # Audio Libraries - from SPES MIUI
-vendor/lib/liba2dpoffload.so|11047bfd368486a99129552e7944a7fb0df2faa2
+vendor/lib/liba2dpoffload.so;MODULE_SUFFIX=_spes;OVERRIDES=liba2dpoffload|11047bfd368486a99129552e7944a7fb0df2faa2
 vendor/lib/libacdb-fts.so|ab2ac3729f9310be71c926eb647f1042f7b76442
 vendor/lib/libacdbloader.so|69b123d87c03b23531561051240e3e7ebc6109d7
 vendor/lib/libacdbrtac.so|d9a31b8e3035eb3ee29d25b1557cca12c9364f3e
@@ -97,9 +97,9 @@ vendor/lib/libaudioalsa.so|b1521744832c14b67095209955e5d8a440c491a7
 vendor/lib/libaudioconfigstore.so|c41f6f6aeb488155f7018f44e452b76fc014b72d
 vendor/lib/libaudioparsers.so|522d0f379103e431271d3c409f52814289c49a90
 vendor/lib/libdrc.so|b066f176f119847059c5aa148f73e1b042fbeab3
-vendor/lib/libhdmipassthru.so|b67150cf9a5e30f61cbd21fdfe0f2633a453b383
+vendor/lib/libhdmipassthru.so;MODULE_SUFFIX=_spes;OVERRIDES=libhdmipassthru|b67150cf9a5e30f61cbd21fdfe0f2633a453b383
 vendor/lib/libqtigef.so|cc747f5312e59ed6e436244f16af82987dca4dbd
-vendor/lib/libssrec.so|44e5d6fb497c564b8a8libI420colorconvertb46c909fa151ee722a24e
+vendor/lib/libssrec.so;MODULE_SUFFIX=_spes;OVERRIDES=libssrec|44e5d6fb497c564b8a8b46c909fa151ee722a24e
 vendor/lib/libsurround_3mic_proc.so|e8e086123e0c1dc17f008f97edb3611cd4c702e1
 
 # Batterysecret - from SPES MIUI
@@ -237,7 +237,7 @@ vendor/lib64/libalCFR.so|f43298c36502fbd6fdc42ae79f345197eaf87b2d
 vendor/lib64/libanc_dc_base.so|69c780ed20404f731fa9ec988d66310205e37560
 vendor/lib64/libbitmlengine.so|e13bbe2c68eaf959b8e51b1dbb7328e3dae4a58d
 vendor/lib64/libc++_shared.so|8bd494c3b1da5d250e0dc81231ea094fd0bccf88
-vendor/lib64/libc++_shared_vf.so|4d2d2761ec5fda2dfc0b5f730b62958860ff8c05
+vendor/lib64/libc++_shared_vf.so;FIX_SONAME|4d2d2761ec5fda2dfc0b5f730b62958860ff8c05
 vendor/lib64/libcamera_nn_stub.so|021d78556ca65492713b58fe67b4f6e3bc041776
 vendor/lib64/libcamera_scene.so|4faf256d31e7daa986707179a622b97eed19c81a
 vendor/lib64/libcamerapostproc.so|6b37a3dd5df05abd2e3ff2461f4aaf84a3e28fec
@@ -252,7 +252,7 @@ vendor/lib64/libipebpsstriping.so|84e920e320a5fa35b900e36fcdaba74dbedb384b
 vendor/lib64/libjpege.so|598536cd427186dba8c85f0bc1fa98c8c1174d9d
 vendor/lib64/libmctfengine_stub.so|ca4772217b63716ba7f91763d3c38457e905ee05
 vendor/lib64/libmiai_supernight.so|bf6f1bcce75ae12516c03f094182e5f19569a726
-vendor/lib64/libmialgoengine.so|09e4104a8fa133d337d7f9de72b7c5d9dffca66d
+vendor/lib64/libmialgoengine.so;DISABLE_CHECKELF|09e4104a8fa133d337d7f9de72b7c5d9dffca66d
 vendor/lib64/libmibokeh_712.so|5e847ea8143074d5fc688ad0e8214949f96670d3
 vendor/lib64/libmorpho_Lowlight.so|aa4aeffab045ff32afa1e7607d750e7b45b498c4
 vendor/lib64/libmpbase.so|e6b51e2d501f434eea15ecdc275011d1498301ae
@@ -346,7 +346,7 @@ vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so|1f779874b86d7eae2659
 vendor/lib64/camera/components/com.vidhance.node.processing.so|f259935b53fb665876c17ea9a44e6e88fbec56af
 
 # Camera Componentes/com.qti.node.mialgocontrol - from SPES MIUI
-vendor/lib64/camera/components/com.qti.node.mialgocontrol.so|87fa47ba5e9f55344729246706f1ed1ca7a9c481
+vendor/lib64/camera/components/com.qti.node.mialgocontrol.so;DISABLE_CHECKELF|87fa47ba5e9f55344729246706f1ed1ca7a9c481
 
 # Camera Configs - from SPES MIUI
 vendor/etc/camera/model/dof_model/capture_cache|852b45f60c33509f38e5f5dd2eb02a7004c203be
@@ -394,6 +394,7 @@ vendor/etc/camera/morpho_lowlight_2.0_ofilm_s5kjn1_wide_india.xml|cdc1ac72ab25a8
 vendor/etc/camera/vidhance_calibration|a7b903097b3fa6712e841b9be27a8ffe3aa0e2fb
 
 # Camera Device - from SPES MIUI
+vendor/lib/vendor.qti.hardware.camera.device@3.5.so
 vendor/lib64/vendor.qti.hardware.camera.device@3.5.so|a2b4a0439876fbe6733f99844e22228315a66ba6
 
 # Camera Feature - from SPES MIUI
@@ -418,8 +419,8 @@ vendor/lib64/com.qti.feature2.swmf.so|dbacf6acc9d58dcb1bad7f6850f44b241a8b64df
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|b250d988518158fe5a8dec1a3409519e1aa0cec0
 
 # Camera provider - from SPES MIUI
-vendor/lib/android.hardware.camera.provider@2.4-legacy.so|d22ac69061c70ebfb2b22bc111dd998506603cb0
-vendor/lib64/android.hardware.camera.provider@2.4-legacy.so|35f53f627605eb72d5965de23944832a265629d4
+vendor/lib/android.hardware.camera.provider@2.4-legacy.so;MODULE_SUFFIX=_spes;OVERRIDES=android.hardware.camera.provider@2.4-legacy|d22ac69061c70ebfb2b22bc111dd998506603cb0
+vendor/lib64/android.hardware.camera.provider@2.4-legacy.so;MODULE_SUFFIX=_spes;OVERRIDES=android.hardware.camera.provider@2.4-legacy|35f53f627605eb72d5965de23944832a265629d4hvdcp_opti
 
 # Camera Sensor - from SPES MIUI
 vendor/lib64/libmmcamera_cac3.so|1c1c29bb35e4a109d16a07056dbd5c6ee5465d6f
@@ -430,10 +431,10 @@ vendor/lib64/libmmcamera_mfnr.so|c308ae487c3b54f1874a59517c1247db6d0ca9fd
 vendor/lib64/libmmcamera_mfnr_t4.so|d8eeef7b26f37f6802e17239225a67e05c977fc4
 
 # Charging - from SPES MIUI
-vendor/bin/hvdcp_opti|606c65c67f128aa6a91fb9567239ee32bcafe231
+vendor/bin/hvdcp_opti;MODULE_SUFFIX=_spes;OVERRIDES=hvdcp_opti|606c65c67f128aa6a91fb9567239ee32bcafe231
 
 # Consumer IR - from SPES MIUI
-vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.bengal.so|bb96104803e2468d7982e6955dad14e6bd739939
+vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.bengal.so;FIX_SONAME|bb96104803e2468d7982e6955dad14e6bd739939
 
 # Display Calibration - from SPES MIUI
 vendor/etc/dsi_panel_k7_38_0c_0a_fhdp_video_display_mi.xml|c8f211554503422183f800226229de79e5c06b6c
@@ -443,12 +444,12 @@ vendor/etc/qdcm_calib_data_k7_38_0c_0b_video_mode_fhdp_dsi_panel.xml|515e3f81a7e
 
 # Fingerprint - from SPES MIUI
 vendor/etc/permissions/com.fingerprints.extension.xml|de711d8827e1d321b22b60fd75a204e8928f9c6d
--vendor/framework/com.fingerprints.extension.jar|2541c37690508e8b43b838700afad9cf35522e73
+vendor/framework/com.fingerprints.extension.jar|2541c37690508e8b43b838700afad9cf35522e73
 vendor/lib64/hw/fingerprint.fpc.default.so|a3bc30e235c40ce690919f6168c4d71e90c4a187
-vendor/lib64/hw/fingerprint.goodix.default.so|3ca323582c1cebd860e83199233da32c60b59193
+vendor/lib64/hw/fingerprint.goodix.default.so;FIX_SONAME|3ca323582c1cebd860e83199233da32c60b59193
 vendor/lib64/libgf_ca.so|44b4a6afb7cca14c36fb03c87c37ba22086e0105
 vendor/lib64/libgf_hal.so|5413148210ccdb0ad13abf01a51988fef0ad4f56
-vendor/lib64/libgoodixhwfingerprint.so|594d2f15cf142d5d30a796360a29df45651ee9ee
+vendor/lib64/libgoodixhwfingerprint.so;DISABLE_CHECKELF|594d2f15cf142d5d30a796360a29df45651ee9ee
 vendor/lib64/libmifpext.so|ebb96967494243037ae40337dbe960a7acb1204f
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so|39d820c32426a131ade6b946b0684cc8e2bc44bb
 
@@ -479,10 +480,10 @@ vendor/firmware/a702_zap.elf|089b8c3639b16fc23e94c543192ee8aeeebcb6a1
 vendor/firmware/a702_zap.mdt|9d91325c434167f6deb2ffcfbd7b596f165019e4
 
 # HotwordEnrollment - from SPES MIUI
--product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.apk|1a9aa7a985caa530e29e8b0b40d7bcbc32ae930a
--product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk|2cf9d31017cd68b0406d36efb947100a458a2886
+product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.apk|1a9aa7a985caa530e29e8b0b40d7bcbc32ae930a
+product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk|2cf9d31017cd68b0406d36efb947100a458a2886
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|99cfd80965c170f4885a7dd62c0eaad1a0c7840f
--system_ext/framework/com.android.hotwordenrollment.common.util.jar|7549028e83df9783ea5c7fbf78e5d904e2de0cf7
+system_ext/framework/com.android.hotwordenrollment.common.util.jar|7549028e83df9783ea5c7fbf78e5d904e2de0cf7
 
 # IPA firmware - from SPES MIUI
 vendor/etc/init/ipa_fws.rc|f1826b81077f51470c97781823f109f12361ac8b
@@ -529,7 +530,7 @@ vendor/firmware/st21nfc_fw.bin|ca308173c4272a1288a49df38d9ddee4f8f14957
 vendor/firmware/st21nfc_fw7.bin|09853bac356e0f926badddcdb6b6f0c0d6239060
 
 # Power-off charging daemon - from SPES MIUI
-system/bin/charger:system/bin/chargeonlymode|8078516cb5b463167b709f02dce94792050c485b
+system/bin/charger:system/bin/chargeonlymode;FIX_SONAME|8078516cb5b463167b709f02dce94792050c485b
 
 # Sensors - from SPES MIUI
 vendor/bin/init.qcom.sensors.sh|454c6de8c65b9ad1c41f063544871a4ba0665689
@@ -540,7 +541,7 @@ vendor/etc/init/vendor.sensors.qti.rc|f34fc966af816b50f10ae7520b33863961a14478
 vendor/etc/init/vendor.sensors.sscrpcd.rc|df52901f1ad0fbc97d6070e28896a6be40154814
 vendor/etc/elliptic_sensor.xml|2a38626bb26d9def04d2a34167440c2ee1a41bc1
 vendor/lib64/hw/sensors.elliptic@2.0.so|c19dfafbb3fb4ae8372c8b57fb02d08af5f98c50
-vendor/lib64/libnotifyaudiohal.so|dacd0783b6b06c2ccb60510bf62d8cb16e42dcdd
+vendor/lib64/libnotifyaudiohal.so;FIX_SONAME|dacd0783b6b06c2ccb60510bf62d8cb16e42dcdd
 vendor/lib64/libsensorcal.so|cc3def96d5514b5dfda60251a6a70a15797f2a04
 vendor/lib64/libsensorslog.so|5279ee2022daabd375685af69c5ac7c1dcfcb77d
 vendor/lib64/libssc.so|6ae5e37029f9a9f33edf1cd47d1bc66a41802c6d
@@ -626,11 +627,11 @@ vendor/etc/thermal-videochat.conf|e3d2c4c22bc2e648b26a9552d99301995df9f4bc
 vendor/etc/thermal-video.conf|566eeaac0a274ebfab385ba00e3850861a0132a9
 vendor/etc/thermal-youtube.conf|473079df4d3aa7569148b781d834380293701386
 vendor/etc/thermald-devices.conf|eaa11ec5435404df861a76e5c857e93028ed7ef4
--vendor/lib64/libthermalclient.so|2c77941348a6dae4f41dfffdb49bc29c7efe20be
+vendor/lib64/libthermalclient.so|2c77941348a6dae4f41dfffdb49bc29c7efe20be
 
 # Touch Firmware - from SPES MIUI
 vendor/firmware/Conf_MultipleTest.ini|39e9c063d3130d085995dc874dae263e4b501188
 vendor/firmware/focaltech_ts_fw_samsung.bin|8bfa360b217508c18a054e52b5195a144b0469a9
 
 # Wi-Fi - from SPES MIUI
-vendor/bin/cnss-daemon|3e7b396e4ede1fb7aea28c4b9c6ec9f076f8bf0e
+vendor/bin/cnss-daemon;MODULE_SUFFIX=_spes;OVERRIDES=cnss-daemon|3e7b396e4ede1fb7aea28c4b9c6ec9f076f8bf0e
