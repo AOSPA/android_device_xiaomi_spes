@@ -84,6 +84,8 @@ vendor/firmware/aw87xxx_acf.bin|d5d670071e7bc0cd31f7fc8a2209f102e4a0b2c3
 # Audio HAL - from SPES MIUI
 vendor/lib/hw/audio.primary.bengal.so;FIX_SONAME;MODULE_SUFFIX=_spes;OVERRIDES=audio.primary.bengal|a4b8945137e0eb87e8260c780c1316502f1cc950
 vendor/lib/libaudio_log_utils.so|4bb503a7c4a866ae183bf91073dccc8f35ea9133
+vendor/lib64/hw/audio.primary.bengal.so;FIX_SONAME;MODULE_SUFFIX=_spes;OVERRIDES=audio.primary.bengal|a4b8945137e0eb87e8260c780c1316502f1cc950
+vendor/lib64/libaudio_log_utils.so|4bb503a7c4a866ae183bf91073dccc8f35ea9133
 
 # Audio Libraries - from SPES MIUI
 vendor/lib/liba2dpoffload.so;FIX_SONAME;MODULE_SUFFIX=_spes;OVERRIDES=liba2dpoffload|11047bfd368486a99129552e7944a7fb0df2faa2
@@ -108,6 +110,25 @@ vendor/lib/libsndmonitor.so;MODULE_SUFFIX=_spes;OVERRIDES=libsndmonitor|1682e82f
 vendor/lib/libspkrprot.so;MODULE_SUFFIX=_spes;OVERRIDES=libspkrprot|b7bbc0adc502d14febfc6ca284679c081e840916
 vendor/lib/libssrec.so;MODULE_SUFFIX=_spes;OVERRIDES=libssrec|44e5d6fb497c564b8a8b46c909fa151ee722a24e
 vendor/lib/libsurround_3mic_proc.so|e8e086123e0c1dc17f008f97edb3611cd4c702e1
+vendor/lib64/liba2dpoffload.so;FIX_SONAME;MODULE_SUFFIX=_spes;OVERRIDES=liba2dpoffload|11047bfd368486a99129552e7944a7fb0df2faa2
+vendor/lib64/libacdb-fts.so|ab2ac3729f9310be71c926eb647f1042f7b76442
+vendor/lib64/libacdbloader.so|69b123d87c03b23531561051240e3e7ebc6109d7
+vendor/lib64/libacdbrtac.so|d9a31b8e3035eb3ee29d25b1557cca12c9364f3e
+vendor/lib64/libadiertac.so|2046f951f3305ea3ae34864dafb38ec28989228b
+vendor/lib64/libaudcal.so|e233772c6285584968cc7635c7fb59e4e689e7e1
+vendor/lib64/libaudioalsa.so|b1521744832c14b67095209955e5d8a440c491a7
+vendor/lib64/libaudioconfigstore.so|c41f6f6aeb488155f7018f44e452b76fc014b72d
+vendor/lib64/libaudioparsers.so|522d0f379103e431271d3c409f52814289c49a90
+vendor/lib64/libcirrusspkrprot.so;MODULE_SUFFIX=_spes;OVERRIDES=libcirrusspkrprot|61f343b933bca1ad3ac0ed1f6665dc40330aab08
+vendor/lib64/libcomprcapture.so;MODULE_SUFFIX=_spes;OVERRIDES=libcomprcapture|88fdc2d789d5a6ebf2c92dc9655c0363c7d5f35c
+vendor/lib64/libexthwplugin.so;MODULE_SUFFIX=_spes;OVERRIDES=libexthwplugin|a115d6707ae1edb9246a4d82dea06acd6101e468
+vendor/lib64/libhdmiedid.so;MODULE_SUFFIX=_spes;OVERRIDES=libhdmiedid|adad95be95301e8ffbf0a630b726e7b62c178c57
+vendor/lib64/libhdmipassthru.so;MODULE_SUFFIX=_spes;OVERRIDES=libhdmipassthru|b67150cf9a5e30f61cbd21fdfe0f2633a453b383
+vendor/lib64/libhfp.so;MODULE_SUFFIX=_spes;OVERRIDES=libhfp|06ec8733eb192a498ad88ee923e24cc4c41aa3f3
+vendor/lib64/libqtigef.so|cc747f5312e59ed6e436244f16af82987dca4dbd
+vendor/lib64/libsndmonitor.so;MODULE_SUFFIX=_spes;OVERRIDES=libsndmonitor|1682e82f0ceff2eb439f89caaf026aa505b18c82
+vendor/lib64/libspkrprot.so;MODULE_SUFFIX=_spes;OVERRIDES=libspkrprot|b7bbc0adc502d14febfc6ca284679c081e840916
+vendor/lib64/libssrec.so;MODULE_SUFFIX=_spes;OVERRIDES=libssrec|44e5d6fb497c564b8a8b46c909fa151ee722a24e
 
 # Batterysecret - from SPES MIUI
 vendor/bin/batterysecret|58c75096366cf981b4a1f1cea1f41a392ac0d07b
