@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "06ed240b_387a176b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000579
+      },
+      "writtenOn": "2024-10-22T15:21:08Z",
+      "side": 1,
+      "message": "https://github.com/cupid-development/android_device_xiaomi_sm8450-common/commit/3176ac74cff77702b35e637acf5860d043184f44 did you try this?",
+      "revId": "db087ab94496226c549fd4e280bee34df2a99fc9",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
