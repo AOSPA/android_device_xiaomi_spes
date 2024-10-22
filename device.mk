@@ -31,6 +31,9 @@ PRODUCT_SYSTEM_PROPERTIES += \
     ro.vendor.audio.spk.stereo=true \
     ro.vendor.audio.us.proximity=true
 
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.hardware.audio.primary=bengal-spes
+
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
