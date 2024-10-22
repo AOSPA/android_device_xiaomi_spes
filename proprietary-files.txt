@@ -84,9 +84,9 @@ vendor/etc/sound_trigger_platform_info.xml|cad8a8716b1748a14bc56032ccb2182067b08
 vendor/firmware/aw87xxx_acf.bin|d5d670071e7bc0cd31f7fc8a2209f102e4a0b2c3
 
 # Audio HAL - from SPES MIUI
-vendor/lib/hw/audio.primary.bengal.so;FIX_SONAME;MODULE_SUFFIX=_spes;OVERRIDES=audio.primary.bengal|a4b8945137e0eb87e8260c780c1316502f1cc950
+vendor/lib/hw/audio.primary.bengal.so:vendor/lib/hw/audio.primary.bengal-spes.so;FIX_SONAME
 vendor/lib/libaudio_log_utils.so|4bb503a7c4a866ae183bf91073dccc8f35ea9133
-vendor/lib64/hw/audio.primary.bengal.so;FIX_SONAME;MODULE_SUFFIX=_spes;OVERRIDES=audio.primary.bengal|a4b8945137e0eb87e8260c780c1316502f1cc950
+vendor/lib64/hw/audio.primary.bengal.so:vendor/lib/hw/audio.primary.bengal-spes.so;FIX_SONAME
 vendor/lib64/libaudio_log_utils.so|4bb503a7c4a866ae183bf91073dccc8f35ea9133
 
 # Audio Libraries - from SPES MIUI
