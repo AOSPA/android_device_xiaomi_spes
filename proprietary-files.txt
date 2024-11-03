@@ -355,7 +355,7 @@ vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so|2093c0fb826864af715d
 vendor/lib64/camera/components/com.vidhance.node.processing.so|f259935b53fb665876c17ea9a44e6e88fbec56af
 
 # Camera Componentes/com.qti.node.mialgocontrol - from SPES MIUI
-vendor/lib64/camera/components/com.qti.node.mialgocontrol.so;DISABLE_CHECKELF|f1222bb08dfa492592d68d6217a5c531bdd90e66
+vendor/lib64/camera/components/com.qti.node.mialgocontrol.so;DISABLE_CHECKELF;STRIP_DEBUG_SECTIONS|f1222bb08dfa492592d68d6217a5c531bdd90e66
 
 # Camera Configs - from SPES MIUI
 vendor/etc/camera/model/dof_model/capture_cache|852b45f60c33509f38e5f5dd2eb02a7004c203be
@@ -555,7 +555,6 @@ vendor/lib64/libsensorcal.so|cc3def96d5514b5dfda60251a6a70a15797f2a04
 vendor/lib64/libsensorslog.so|5279ee2022daabd375685af69c5ac7c1dcfcb77d
 vendor/lib64/libssc.so|6ae5e37029f9a9f33edf1cd47d1bc66a41802c6d
 vendor/lib64/libssc_default_listener.so|1653233f7454f3be9e8361ab5fde7cd45e9ac9b4
-vendor/lib64/libsnsapi.so|208be1707a670165ced8fa863c28b1ac8923e6c4
 vendor/lib64/sensors.ssc.so|a229f862687b32ae3dfb648b7cb7936be126242e
 vendor/lib64/sensors.touch.detect.so|0fe0b39a02d619dbaf56c80ee598c541e121b94a
 
