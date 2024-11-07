@@ -7,8 +7,6 @@
 
 function vendor_imports() {
     cat << EOF >> "$1"
-        "device/xiaomi/spes",
-		"device/xiaomi/sm6225-common",
 		"hardware/xiaomi",
 EOF
 }
