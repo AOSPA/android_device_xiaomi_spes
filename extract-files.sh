@@ -24,6 +24,12 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             sed -i "/seclabel u:r:batterysecret:s0/d" "${2}"
             ;;
+        vendor/lib64/libgoodixhwfingerprint.so)
+            [ "$2" = "" ] && return 0
+            grep -q "libvendor.goodix.hardware.biometrics.fingerprint@2.1.so" "${2}" && \
+                ${PATCHELF} --replace-needed "libvendor.goodix.hardware.biometrics.fingerprint@2.1.so" \
+                "vendor.goodix.hardware.biometrics.fingerprint@2.1.so" "${2}"
+            ;;
         *)
             return 1
             ;;
