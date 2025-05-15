@@ -355,7 +355,7 @@ vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so|2093c0fb826864af715d
 vendor/lib64/camera/components/com.vidhance.node.processing.so|f259935b53fb665876c17ea9a44e6e88fbec56af
 
 # Camera Componentes/com.qti.node.mialgocontrol - from SPES MIUI
-vendor/lib64/camera/components/com.qti.node.mialgocontrol.so;DISABLE_CHECKELF|f1222bb08dfa492592d68d6217a5c531bdd90e66
+vendor/lib64/camera/components/com.qti.node.mialgocontrol.so;DISABLE_CHECKELF;STRIP_DEBUG_SECTIONS|f1222bb08dfa492592d68d6217a5c531bdd90e66
 
 # Camera Configs - from SPES MIUI
 vendor/etc/camera/model/dof_model/capture_cache|852b45f60c33509f38e5f5dd2eb02a7004c203be
